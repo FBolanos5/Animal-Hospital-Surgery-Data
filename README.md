@@ -1,6 +1,6 @@
 # Animal-Hospital-Surgery-Data
 
-Data of amount of surgeries done at an animal hospital.
+Data of amount and type of surgeries done at an animal hospital.
 
 ## Data Included:
 
