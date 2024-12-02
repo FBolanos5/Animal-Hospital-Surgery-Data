@@ -4,10 +4,10 @@ Data of the surgeries done at an animal hospital.
 
 ## Data Included:
 
-- Type of surgery
 - Species of animal
-- Date of surgery
+- Type of surgery
 - Age of animal
+- Date of surgery
 
 # Created By
 
