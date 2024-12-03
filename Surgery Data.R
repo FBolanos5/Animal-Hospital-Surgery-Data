@@ -2,6 +2,10 @@
 # Date Started: 12/02/2024
 
 
+# Libraries used:
+library(dplyr)
+
+
 # Create a data frame that will hold all collected data 
 # Includes: species, type of surgery, age of animal, and date of the surgery
 
@@ -109,4 +113,10 @@ surgery_data <- data.frame(
 )
 print(surgery_data)
 
+# Some experimenting with getting data. Possible uses later.
 
+surgery_data %>% count(species)
+surgery_data %>% count(surgery_type)
+surgery_data %>% count(surgery_date)
+surgery_data %>% group_by(species) %>% filter(age == max(age, na.rm = TRUE))
+mean(surgery_data$age)
