@@ -30,7 +30,11 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Cat", "Dog",
               
                                       # February's species
-              "Cat", "Dog", "Dog", "Dog", "Cat", "Cat", "Cat"),
+              "Cat", "Dog", "Dog", "Dog", "Cat", "Cat", "Cat", "Dog", "Dog", "Cat",
+              "Dog", "Dog", "Cat", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Cat",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog"),
   
   
   
@@ -66,7 +70,13 @@ surgery_data <- data.frame(
                    
                                           # February's surgery types
                    "Spay", "Spay", "Dental", "Hernia Repair", "Spay", "Mass Removal",
-                   "Dental"
+                   "Dental", "Nasal Scope", "Hematoma", "Neuter", "Aspiration", 
+                   "Exploratory", "Laceration Repair", "Abscess Repair", "Neuter",
+                   "Spay", "Spay", "Dental", "Dental", "Spay", "Pyometra", "Enema",
+                   "Dental", "Spay", "Gastrotomy", "Pyometra", "Neuter", "Mass Removal",
+                   "Laceration Repair", "Mass Removal", "Mass Removal", "Laceration Repair",
+                   "Mass Removal", "Abscess Repair", "Laceration Repair", "Dental",
+                   "Dental", "Mass Removal", "Enterotomy", "Hernia Repair", "Neuter"
                    
                    ),
   
@@ -82,7 +92,9 @@ surgery_data <- data.frame(
           .66, 2, 2, 6, 2, .75,
           
                                             # February's pet ages
-          1, .5, 7, 10, 7, 10, 10
+          1, .5, 7, 10, 7, 10, 10, 6, 7, .5, 9, 13, 2, 3, .5, .5, .75, 10, 11, .5,
+          12, 5, 4, .58, .58, 7, 3, 10, .75, 5, 11, 14, 12, 9, .08, 8, 11, 11, 11,
+          11, 11
           
           ),
   
@@ -128,7 +140,16 @@ surgery_data <- data.frame(
                            
                                               # February surgery dates
                            "2024-02-01", "2024-02-01", "2024-02-01", "2024-02-01",
-                           "2024-02-01", "2024-02-01", "2024-02-01"
+                           "2024-02-01", "2024-02-01", "2024-02-01", "2024-02-02",
+                           "2024-02-02", "2024-02-02", "2024-02-02", "2024-02-03",
+                           "2024-02-03", "2024-02-03", "2024-02-05", "2024-02-05",
+                           "2024-02-05", "2024-02-05", "2024-02-05", "2024-02-05",
+                           "2024-02-05", "2024-02-05", "2024-02-06", "2024-02-06",
+                           "2024-02-06", "2024-02-06", "2024-02-07", "2024-02-07",
+                           "2024-02-07", "2024-02-08", "2024-02-08", "2024-02-08",
+                           "2024-02-08", "2024-02-08", "2024-02-08", "2024-02-09",
+                           "2024-02-09", "2024-02-09", "2024-02-09", "2024-02-09",
+                           "2024-02-09"
                            )),
   
   
