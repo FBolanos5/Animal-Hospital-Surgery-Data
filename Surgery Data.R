@@ -43,7 +43,13 @@ surgery_data <- data.frame(
               "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Cat",
               "Dog", "Cat", "Cat", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog",
               "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
-              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog"),
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog"
+              
+              
+                          
+                                      # March's species  
+              
+              ),
   
   
   
@@ -106,6 +112,10 @@ surgery_data <- data.frame(
                    "Spay", "Spay", "Exploratory", "Spay", "Spay", "Dental", "Hernia Repair",
                    "Abscess Repair", "Gastric Tube Insertion", "Abscess Repair", "Laceration Repair"
                    
+                   
+                   
+                                            # March's surgery types
+                   
                    ),
   
   
@@ -127,6 +137,9 @@ surgery_data <- data.frame(
           1, 13, .83, 4, 1, 12, 12, 3, 8, 10, 10, .66, .83, .83, 5, 6, 1, 1, .5,
           3, 1, 15, 1, 1, 13, 13, 13, 7, 1, .83, 11, 7, 4, 9, 1, 2, 2, .5, 9, .5,
           15, .58, 6, 19, 11, 7, 9, 6, 2, 5, 13, 1, .33, .33, .33, 2, 12, 6, 1
+          
+          
+                                            # March's pet ages
           
           ),
   
@@ -205,6 +218,10 @@ surgery_data <- data.frame(
                            "2024-02-27", "2024-02-28", "2024-02-28", "2024-02-28",
                            "2024-02-29", "2024-02-29", "2024-02-29", "2024-02-29",
                            "2024-02-29", "2024-02-29", "2024-02-29", "2024-02-29"
+                           
+                           
+                           
+                                              # March surgery dates
                            )),
   
   
