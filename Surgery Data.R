@@ -9,7 +9,7 @@ library(dplyr)
 # Create a data frame that will hold all collected data 
 # Includes: species, type of surgery, age of animal, and date of the surgery
 
-
+options(max.print = 3000)
 surgery_data <- data.frame(
   
                                       # January's species
@@ -37,7 +37,13 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Cat", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Cat",
               "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog",
-              "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Cat"),
+              "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Cat", "Cat",
+              "Cat", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog",
+              "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Cat",
+              "Dog", "Cat", "Cat", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog",
+              "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog"),
   
   
   
@@ -87,7 +93,18 @@ surgery_data <- data.frame(
                    "Dental", "Dental", "Dental", "Enucleation", "Cystotomy", "Neuter",
                    "Laceration Repair", "Laceration Repair", "Mass Removal", "Laceration Repair",
                    "Exploratory", "Abdominocentesis", "Laceration Repair", "Laceration Repair",
-                   "Laceration Repair"
+                   "Laceration Repair", "Laceration Repair", "Laceration Repair",
+                   "Fracture Repair", "TPLO", "Dental", "Hematoma", "Dental", "Spay",
+                   "Dental", "Abscess Repair", "Dental", "Spay", "Spay", "Termination",
+                   "Dental", "Neuter", "Laceration Repair", "Netuer", "Spay", "Abscess Repair",
+                   "Spay", "Abscess Repair", "Eye Reduction", "Abscess Repair",
+                   "Mass Removal", "Prolapse Repair", "Mass Removal", "Urethrostomy",
+                   "Neuter", "Spay", "Enucleation", "Urethrostomy", "Abscess Repair",
+                   "Laceration Repair", "Neuter", "Laceration Repair", "C-Section",
+                   "Spay", "Dental", "Spay", "Dental", "Spay", "Dental", "Laceration Repair",
+                   "Enucleation", "Mass Removal", "Laceration Repair", "Laceration Repair",
+                   "Spay", "Spay", "Exploratory", "Spay", "Spay", "Dental", "Hernia Repair",
+                   "Abscess Repair", "Gastric Tube Insertion", "Abscess Repair", "Laceration Repair"
                    
                    ),
   
@@ -106,7 +123,10 @@ surgery_data <- data.frame(
           1, .5, 7, 10, 7, 10, 10, 6, 7, .5, 9, 13, 2, 3, .5, .5, .75, 10, 11, .5,
           12, 5, 4, .58, .58, 7, 3, 10, .75, 5, 11, 14, 12, 9, .08, 8, 11, 11, 11,
           11, 11, 10, 19, .92, .92, .58, 9, 9, 6, .66, 1, 8, 13, 8, 9, 9, 3, .58,
-          .58, 11, 11, 13, 10, 11, 13, 12, 6, 6, 2, 10, 7, 3, 12, 11, .75, 2, 11
+          .58, 11, 11, 13, 10, 11, 13, 12, 6, 6, 2, 10, 7, 3, 12, 11, .75, 2, 11,
+          1, 13, .83, 4, 1, 12, 12, 3, 8, 10, 10, .66, .83, .83, 5, 6, 1, 1, .5,
+          3, 1, 15, 1, 1, 13, 13, 13, 7, 1, .83, 11, 7, 4, 9, 1, 2, 2, .5, 9, .5,
+          15, .58, 6, 19, 11, 7, 9, 6, 2, 5, 13, 1, .33, .33, .33, 2, 12, 6, 1
           
           ),
   
@@ -170,12 +190,27 @@ surgery_data <- data.frame(
                            "2024-02-15", "2024-02-15", "2024-02-15", "2024-02-15",
                            "2024-02-15", "2024-02-15", "2024-02-16", "2024-02-16",
                            "2024-02-16", "2024-02-16", "2024-02-17", "2024-02-17",
-                           "2024-02-17"
+                           "2024-02-17", "2024-02-18", "2024-02-18", "2024-02-19",
+                           "2024-02-19", "2024-02-19", "2024-02-19", "2024-02-19",
+                           "2024-02-19", "2024-02-19", "2024-02-19", "2024-02-20",
+                           "2024-02-20", "2024-02-20", "2024-02-20", "2024-02-20",
+                           "2024-02-20", "2024-02-20", "2024-02-21", "2024-02-21",
+                           "2024-02-21", "2024-02-21", "2024-02-21", "2024-02-21",
+                           "2024-02-21", "2024-02-22", "2024-02-22", "2024-02-22", 
+                           "2024-02-22", "2024-02-23", "2024-02-23", "2024-02-23",
+                           "2024-02-23", "2024-02-23", "2024-02-23", "2024-02-24",
+                           "2024-02-24", "2024-02-25", "2024-02-26", "2024-02-26",
+                           "2024-02-26", "2024-02-26", "2024-02-26", "2024-02-26",
+                           "2024-02-26", "2024-02-27", "2024-02-27", "2024-02-27",
+                           "2024-02-27", "2024-02-28", "2024-02-28", "2024-02-28",
+                           "2024-02-29", "2024-02-29", "2024-02-29", "2024-02-29",
+                           "2024-02-29", "2024-02-29", "2024-02-29", "2024-02-29"
                            )),
   
   
   stringsAsFactors = FALSE
 )
+
 print(surgery_data)
 
 # Some experimenting with getting data. Possible uses later.
