@@ -49,7 +49,11 @@ surgery_data <- data.frame(
                           
                                       # March's species  
               
-              "Rabbit", "Cat", "Dog", "Dog"),
+              "Rabbit", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Cat", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog"),
   
   
   
@@ -116,7 +120,15 @@ surgery_data <- data.frame(
                    
                                             # March's surgery types
                    
-                   "Neuter", "Neuter", "Spay", "Spay"),
+                   "Neuter", "Neuter", "Spay", "Spay", "Laceration Repair", "Laceration Repair",
+                   "Laceration Repair", "Laceration Repair", "ACL Repair", "TPLO",
+                   "Dental", "Dental", "Spay", "Neuter", "Mass Removal", "Dental",
+                   "Mass Removal", "Neuter", "Abscess Repair", "Mass Removal", "Amputation",
+                   "Neuter", "Neuter", "Neuter", "Neuter", "Adenoma Removal", "Scrotal Ablation",
+                   "Abscess Repair", "Laceration Repair", "Spay", "Neuter", "Mass Removal",
+                   "Spay", "Spay", "Femoral Head & Neck Repair", "Abscess Repair",
+                   "Mass Removal", "Spay", "Mass Removal", "Mass Removal", "Dental",
+                   "Spay", "Dental", "Aspiration", "Abscess Repair"),
   
   
                                             # January's pet ages (LOOK AT 99'S NEED AGES FOR PET)
@@ -141,7 +153,9 @@ surgery_data <- data.frame(
           
                                             # March's pet ages
           
-          .5, .5, .5, .5),
+          .5, .5, .5, .5, 3, .75, 8, 7, 5, 8, 10, 13, .66, 1, 8, 8, 4, 1, 10, 8, 9,
+          2, 1, .5, 13, 13, 13, 12, 1, .5, .5, 8, .5, 1, 7, 10, 11, 1, 3, 7, 7, .83,
+          8, 4, 3),
   
                                               # January surgery dates(LOOK AT JAN 28, NEED AGES FOR PET'S THAT ARE 99)
   surgery_date = as.Date(c("2024-01-02", "2024-01-02", "2024-01-02", "2024-01-04", 
@@ -222,7 +236,19 @@ surgery_data <- data.frame(
                            
                            
                                               # March surgery dates
-                           "2024-03-01", "2024-03-01", "2024-03-01", "2024-03-01")),
+                           "2024-03-01", "2024-03-01", "2024-03-01", "2024-03-01",
+                           "2024-03-02", "2024-03-02", "2024-03-03", "2024-03-03",
+                           "2024-03-04", "2024-03-04", "2024-03-04", "2024-03-04",
+                           "2024-03-04", "2024-03-04", "2024-03-04", "2024-03-04",
+                           "2024-03-04", "2024-03-04", "2024-03-04", "2024-03-05",
+                           "2024-03-05", "2024-03-05", "2024-03-05", "2024-03-05",
+                           "2024-03-05", "2024-03-05", "2024-03-05", "2024-03-05",
+                           "2024-03-06", "2024-03-06", "2024-03-06", "2024-03-06",
+                           "2024-03-06", "2024-03-06", "2024-03-06", "2024-03-06",
+                           "2024-03-06", "2024-03-07", "2024-03-07", "2024-03-07",
+                           "2024-03-07", "2024-03-07", "2024-03-07", "2024-03-07",
+                           "2024-03-07"
+                           )),
   
   
   stringsAsFactors = FALSE
