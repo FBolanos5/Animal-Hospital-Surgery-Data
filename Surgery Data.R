@@ -61,7 +61,11 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat",
               "Cat", "Dog", "Dog", "Dog", "Dog", "Cat", "Cat", "Cat", "Dog", "Dog",
               "Cat", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Dog", "Dog"),
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Cat",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
+              "Cat", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog"),
   
   
   
@@ -152,7 +156,16 @@ surgery_data <- data.frame(
                    "Pyometra", "Spay", "Spay", "Neuter", "Neuter", "Hematoma", "Abscess Repair",
                    "Abscess Repair", "Spay", "Spay", "Neuter", "Spay", "Neuter",
                    "Mass Removal", "Neuter", "Ablation", "Urethrostomy", "Neuter",
-                   "Mass Removal", "Laceration Repair"),
+                   "Mass Removal", "Laceration Repair", "Spay", "Mass Removal", "Mass Remoal",
+                   "Abscess Repair", "Mass Removal", "Laceration Repair", "Spay",
+                   "Neuter", "Dental", "Neuter", "Neuter", "Mass Removal", "Pyometra",
+                   "Dental", "Dental", "Laceration Repair", "Mass Removal", "Spay",
+                   "Mass Removal", "Laceration Repair", "Neuter", "Soft Tissue", "Spay",
+                   "Mass Removal", "Cherry Eye", "Mass Removal", "Abscess Repair",
+                   "Laceration Repair", "Mass Removal", "Neuter", "Neuter", "Neuter",
+                   "Neuter", "Neuter", "Mass Removal", "Spay", "Gastric Tube Insertion",
+                   "Abscess Repair", "Cystotomy", "Laceration Repair", "Laceration Repair",
+                   "Hematoma", "Laceration Repair"),
   
   
                                             # January's pet ages (LOOK AT 99'S NEED AGES FOR PET)
@@ -182,7 +195,10 @@ surgery_data <- data.frame(
           8, 4, 3, .92, .5, .58, 4, 1, .58, 11, 10, 10, 12, 8, 12, 9, 9, 9, 12, 6,
           14, 2, 13, 10, 1, 4, .5, 3, 9, 8, 8, 12, 2, 7, 5, 5, 9, 10, 10, 8, 13,
           11, 1, .5, 2, 2, 2, 11, 10, 6, 3, 1, 12, 12, 12, 14, 1, .58, 10, 15, 1,
-          1, 4, 1, .5, .5, .83, 9, 1, 2, .75, 1, 1, 1, 1, 11, 9, 9, 9, 1, 10, 13),
+          1, 4, 1, .5, .5, .83, 9, 1, 2, .75, 1, 1, 1, 1, 11, 9, 9, 9, 1, 10, 13,
+          .5, 8, 13, 1, 5, 11, 1, 1, 2, 1, .5, 7, 13, 16, 7, 2, 14, 2, 12, 6, 7,
+          10, .5, 7, 2, 6, 3, 6, 13, .75, 2, .5, 2, .75, 4, 5, 12, .25, 6, 11, 13,
+          2, 11),
   
                                               # January surgery dates(LOOK AT JAN 28, NEED AGES FOR PET'S THAT ARE 99)
   surgery_date = as.Date(c("2024-01-02", "2024-01-02", "2024-01-02", "2024-01-04", 
@@ -293,7 +309,18 @@ surgery_data <- data.frame(
                            "2024-03-19", "2024-03-19", "2024-03-19", "2024-03-19",
                            "2024-03-20", "2024-03-20", "2024-03-20", "2024-03-20",
                            "2024-03-20", "2024-03-21", "2024-03-21", "2024-03-21",
-                           "2024-03-21", "2024-03-21", "2024-03-21", "2024-03-21")),
+                           "2024-03-21", "2024-03-21", "2024-03-21", "2024-03-21",
+                           "2024-03-22", "2024-03-22", "2024-03-22", "2024-03-22",
+                           "2024-03-23", "2024-03-23", "2024-03-25", "2024-03-25",
+                           "2024-03-25", "2024-03-25", "2024-03-25", "2024-03-25",
+                           "2024-03-25", "2024-03-25", "2024-03-25", "2024-03-25",
+                           "2024-03-25", "2024-03-26", "2024-03-26", "2024-03-26",
+                           "2024-03-26", "2024-03-26", "2024-03-27", "2024-03-27",
+                           "2024-03-27", "2024-03-27", "2024-03-27", "2024-03-27",
+                           "2024-03-27", "2024-03-28", "2024-03-28", "2024-03-28",
+                           "2024-03-29", "2024-03-29", "2024-03-29", "2024-03-29",
+                           "2024-03-29", "2024-03-30", "2024-03-30", "2024-03-30",
+                           "2024-03-30", "2024-03-31", "2024-03-31")),
   
   
   stringsAsFactors = FALSE
