@@ -71,7 +71,11 @@ surgery_data <- data.frame(
                                       # April's species
               "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog",
-              "Dog", "Dog", "Cat", "Cat"
+              "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog",
+              "Dog", "Cat", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog",
+              "Dog", "Dog", "Dog", "Dog"
               
               
               
@@ -184,19 +188,26 @@ surgery_data <- data.frame(
                    "Urethrostomy", "Spay", "Hematoma", "Spay", "Laceration Repair",
                    "Laceration Repair", "Endoscopy", "Neuter", "Neuter", "Neuter",
                    "Neuter", "Laceration Repair", "Laceration Repair", "Neuter",
-                   "Ablation", "Neuter", "Enema", "Abscess Repair"
+                   "Ablation", "Neuter", "Enema", "Abscess Repair", "Spay", "Spay",
+                   "Neuter", "Dental", "Hemimandibulectomy", "Laceration Repair",
+                   "Hematoma", "Pyometra", "Mass Removal", "Nasal Scope", 'Abscess Repair',
+                   "Laceration Repair", "Spay", "Spay", "Neuter", "Mass Removal", "Dental",
+                   "Dental", "Dystocia", "Neuter", "Medial Patella Luxation", "Cruciate Repair",
+                   "Dental", "Dental", "Spay", "Mass Removal", "Dental", "Spay", "Mass Removal",
+                   "Mass Removal", "Dental", "Neuter", "Spay", "Neuter", "Neuter",
+                   "Dental", "Spay", "Dental", "Neuter", "Abscess Repair"
                    ),
   
   
   
-                                            # January's pet ages (LOOK AT 99'S NEED AGES FOR PET)
+                                            # January's pet ages 
   age = c(.5, 1, 1, .83, 6, 12, 4, 5, 1, 5, 5, 3, .5, 1, 6, .75, .75, 11, 3, 11, 2,
           8, 3, 3, .58, .75, 11, 5, 2, 5, 5, 5, 13, 13, 9, 8, 2, 1, .83, .83, 7, 
           13, .83, 9, 7, 11, 3, .67, 11, 11, .5, 2, .83, 3, 4, 3, 11, 2, .58, 8, 
           8, 1, .5, 12, 5, 9, 1, 8, 9, 4, 4, 7, .92, .75, .75, 6, 1, 3, 1, 1, 2, .75,
           6, 11, .5, .75, 8, 3, 3, 8, .66, 12, 12, 10, 7, .5, .83, 12, 1, 1, 12, 2,
           1, .58, .58, 10, 8, 14, 2, 7, 6, 11, 11, 11, 8, 7, 6, 2, 12, .58, .83, 1,
-          11, 14, 10, 3, 99, 99, 10, 11, 14, .5, .66, .83, 13, 13, 10, 11, .66, 1,
+          11, 14, 10, 3, 2, 2, 10, 11, 14, .5, .66, .83, 13, 13, 10, 11, .66, 1,
           .66, 2, 2, 6, 2, .75,
           
                                             # February's pet ages
@@ -224,7 +235,9 @@ surgery_data <- data.frame(
           
                                             # April's pet ages
           5, 9, 7, 1, 4, 6, 2, .5, 9, 1, 3, 3, 3, 1, .5, .66, .66, 2, 7, 11, 11, 
-          .66, 13, 12
+          .66, 13, 12, .92, .75, 1, 7, .66, 6, 13, 9, 9, 4, 4, .25, 11, 1, .75, 6,
+          6, 13, .58, .58, 11, 11, 5, 19, 3, 12, 9, 10, 10, 9, 9, 1, .75, 5, 1, 10,
+          .5, 4, 58, 7
           
           ),
   
@@ -358,7 +371,17 @@ surgery_data <- data.frame(
                            "2024-04-02", "2024-04-02", "2024-04-02", "2024-04-02",
                            "2024-04-02", "2024-04-03", "2024-04-03", "2024-04-03",
                            "2024-04-03", "2024-04-03", "2024-04-04", "2024-04-04",
-                           "2024-04-04", "2024-04-04", "2024-04-04", "2024-04-04"
+                           "2024-04-04", "2024-04-04", "2024-04-04", "2024-04-04",
+                           "2024-04-05", "2024-04-05", "2024-04-05", "2024-04-05",
+                           "2024-04-05", "2024-04-06", "2024-04-07", "2024-04-07",
+                           "2024-04-07", "2024-04-07", "2024-04-07", "2024-04-07",
+                           "2024-04-08", "2024-04-08", "2024-04-08", "2024-04-08",
+                           "2024-04-08", "2024-04-08", "2024-04-08", "2024-04-08",
+                           "2024-04-08", "2024-04-08", "2024-04-08", "2024-04-08",
+                           "2024-04-09", "2024-04-09", "2024-04-09", "2024-04-09",
+                           "2024-04-09", "2024-04-09", "2024-04-09", "2024-04-10",
+                           "2024-04-10", "2024-04-10", "2024-04-10", "2024-04-11",
+                           "2024-04-11", "2024-04-11", "2024-04-11", "2024-04-11"
                            
                            )),
   
