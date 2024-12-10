@@ -87,6 +87,9 @@ surgery_data <- data.frame(
               
               
               
+                                        # May's species
+              
+              
               ),
   
   
@@ -219,8 +222,13 @@ surgery_data <- data.frame(
                    "Laceration Repair", "Abscess Repair", "Nasal Scope", " Laceration Repair",
                    "Abscess Repair", "Neuter", "Spay", "Mass Removal", "Laceration Repair",
                    "Gastric Tube Insertion", "Mass Removal", "Mass Removal", "Spay",
-                   "Spay", "Laceration Repair", "Gastronomy", "Gallbladder Removal",
+                   "Spay", "Laceration Repair", "Gastrotomy", "Gallbladder Removal",
                    "Abscess Repair"
+                   
+                   
+                                            # May's surgery types
+                   
+                   
                    ),
   
   
@@ -262,11 +270,15 @@ surgery_data <- data.frame(
           5, 9, 7, 1, 4, 6, 2, .5, 9, 1, 3, 3, 3, 1, .5, .66, .66, 2, 7, 11, 11, 
           .66, 13, 12, .92, .75, 1, 7, .66, 6, 13, 9, 9, 4, 4, .25, 11, 1, .75, 6,
           6, 13, .58, .58, 11, 11, 5, 19, 3, 12, 9, 10, 10, 9, 9, 1, .75, 5, 1, 10,
-          .5, 4, 58, 7, .66, 2, 9, 3, 2, 16, 3, .66, .58, .83, 9, 9, .75, 1, .5, 7,
+          .5, 4, .58, 7, .66, 2, 9, 3, 2, 16, 3, .66, .58, .83, 9, 9, .75, 1, .5, 7,
           7, 2, .42, 1, 3, 12, 8, 2, 8, 9, 4, 14, .92, .92, 7, 5, 13, 1, 5, .5, 6,
           1, 1, 2, 14, 2, 1, 3, 6, 1, 3, .58, 10, 4, 10, 3, 3 ,10, .83, .83, 7, .5,
           13, 5, 13, .66, 10, 7, 10, 5, 2, 10, 9, 11, 9, .75, 5, 11, 3, 6, 10, 10,
           .5, 2, 3, 4, 9, 9
+          
+          
+          
+                                            # May's pet ages
           
           ),
   
@@ -433,6 +445,11 @@ surgery_data <- data.frame(
                            "2024-04-29", "2024-04-29", "2024-04-29", "2024-04-29",
                            "2024-04-30", "2024-04-30", "2024-04-30", "2024-04-30"
                            
+                           
+                                              # May surgery dates
+                           
+                           
+                           
                            )),
   
   
@@ -446,5 +463,5 @@ print(surgery_data)
 #surgery_data %>% count(species)
 #surgery_data %>% count(surgery_type)
 #surgery_data %>% count(surgery_date)
-#surgery_data %>% group_by(species) %>% filter(age == max(age, na.rm = TRUE))
+#surgery_data %>% group_by(species) %>% filter(age == min(age, na.rm = TRUE))
 #mean(surgery_data$age)
