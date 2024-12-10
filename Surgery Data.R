@@ -3,8 +3,15 @@
 
 
 # Libraries used:
+
 library(dplyr)
 
+# Functions:
+
+find_mode <- function(df, column)
+{
+  df %>% count(!!sym(column)) %>% filter(n == max(n)) %>% pull(!!sym(column))
+}
 
 # Create a data frame that will hold all collected data 
 # Includes: species, type of surgery, age of animal, and date of the surgery
@@ -465,3 +472,4 @@ print(surgery_data)
 #surgery_data %>% count(surgery_date)
 #surgery_data %>% group_by(species) %>% filter(age == min(age, na.rm = TRUE))
 #mean(surgery_data$age)
+mode <- find_mode(surgery_data, "surgery_date")
