@@ -69,7 +69,9 @@ surgery_data <- data.frame(
               
               
                                       # April's species
-              "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Cat"
+              "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Cat"
               
               
               
@@ -179,8 +181,10 @@ surgery_data <- data.frame(
                    
                                                 # April's surgery types
                    "TPLO", "Dental", "Dental", "Neuter", "Mass Removal", "Pyometra",
-                   "Urethrostomy"
-                   
+                   "Urethrostomy", "Spay", "Hematoma", "Spay", "Laceration Repair",
+                   "Laceration Repair", "Endoscopy", "Neuter", "Neuter", "Neuter",
+                   "Neuter", "Laceration Repair", "Laceration Repair", "Neuter",
+                   "Ablation", "Neuter", "Enema", "Abscess Repair"
                    ),
   
   
@@ -219,7 +223,8 @@ surgery_data <- data.frame(
           
           
                                             # April's pet ages
-          5, 9, 7, 1, 4, 6, 2
+          5, 9, 7, 1, 4, 6, 2, .5, 9, 1, 3, 3, 3, 1, .5, .66, .66, 2, 7, 11, 11, 
+          .66, 13, 12
           
           ),
   
@@ -349,7 +354,11 @@ surgery_data <- data.frame(
                            
                                               # April surgery dates
                            "2024-04-01", "2024-04-01", "2024-04-01", "2024-04-01",
-                           "2024-04-01", "2024-04-01", "2024-04-01"
+                           "2024-04-01", "2024-04-01", "2024-04-01", "2024-04-02",
+                           "2024-04-02", "2024-04-02", "2024-04-02", "2024-04-02",
+                           "2024-04-02", "2024-04-03", "2024-04-03", "2024-04-03",
+                           "2024-04-03", "2024-04-03", "2024-04-04", "2024-04-04",
+                           "2024-04-04", "2024-04-04", "2024-04-04", "2024-04-04"
                            
                            )),
   
