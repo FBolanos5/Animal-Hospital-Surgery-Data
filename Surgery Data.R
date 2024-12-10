@@ -65,10 +65,11 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
               "Cat", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog",
-              "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog"
+              "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog",
               
               
                                       # April's species
+              "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Cat"
               
               
               
@@ -172,12 +173,13 @@ surgery_data <- data.frame(
                    "Laceration Repair", "Mass Removal", "Neuter", "Neuter", "Neuter",
                    "Neuter", "Neuter", "Mass Removal", "Spay", "Gastric Tube Insertion",
                    "Abscess Repair", "Cystotomy", "Laceration Repair", "Laceration Repair",
-                   "Hematoma", "Laceration Repair"
+                   "Hematoma", "Laceration Repair",
                    
                    
                    
                                                 # April's surgery types
-                   
+                   "TPLO", "Dental", "Dental", "Neuter", "Mass Removal", "Pyometra",
+                   "Urethrostomy"
                    
                    ),
   
@@ -213,11 +215,11 @@ surgery_data <- data.frame(
           1, 4, 1, .5, .5, .83, 9, 1, 2, .75, 1, 1, 1, 1, 11, 9, 9, 9, 1, 10, 13,
           .5, 8, 13, 1, 5, 11, 1, 1, 2, 1, .5, 7, 13, 16, 7, 2, 14, 2, 12, 6, 7,
           10, .5, 7, 2, 6, 3, 6, 13, .75, 2, .5, 2, .75, 4, 5, 12, .25, 6, 11, 13,
-          2, 11
+          2, 11,
           
           
                                             # April's pet ages
-          
+          5, 9, 7, 1, 4, 6, 2
           
           ),
   
@@ -342,11 +344,12 @@ surgery_data <- data.frame(
                            "2024-03-27", "2024-03-28", "2024-03-28", "2024-03-28",
                            "2024-03-29", "2024-03-29", "2024-03-29", "2024-03-29",
                            "2024-03-29", "2024-03-30", "2024-03-30", "2024-03-30",
-                           "2024-03-30", "2024-03-31", "2024-03-31"
+                           "2024-03-30", "2024-03-31", "2024-03-31",
                            
                            
                                               # April surgery dates
-                           
+                           "2024-04-01", "2024-04-01", "2024-04-01", "2024-04-01",
+                           "2024-04-01", "2024-04-01", "2024-04-01"
                            
                            )),
   
