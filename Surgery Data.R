@@ -90,12 +90,12 @@ surgery_data <- data.frame(
               "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Cat",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Cat", "Cat", "Cat",
               "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Cat", "Cat", "Cat", "Dog", "Dog", "Dog"
+              "Dog", "Dog", "Cat", "Cat", "Cat", "Dog", "Dog", "Dog",
               
               
               
                                         # May's species
-              
+              "Dog", "Dog", "Cat", "Dog", "Dog"
               
               ),
   
@@ -230,11 +230,11 @@ surgery_data <- data.frame(
                    "Abscess Repair", "Neuter", "Spay", "Mass Removal", "Laceration Repair",
                    "Gastric Tube Insertion", "Mass Removal", "Mass Removal", "Spay",
                    "Spay", "Laceration Repair", "Gastrotomy", "Gallbladder Removal",
-                   "Abscess Repair"
+                   "Abscess Repair",
                    
                    
                                             # May's surgery types
-                   
+                   "Neuter", "Mass Removal", "Hematoma", "Laceration Repair", "Enucleation"
                    
                    ),
   
@@ -281,11 +281,13 @@ surgery_data <- data.frame(
           7, 2, .42, 1, 3, 12, 8, 2, 8, 9, 4, 14, .92, .92, 7, 5, 13, 1, 5, .5, 6,
           1, 1, 2, 14, 2, 1, 3, 6, 1, 3, .58, 10, 4, 10, 3, 3 ,10, .83, .83, 7, .5,
           13, 5, 13, .66, 10, 7, 10, 5, 2, 10, 9, 11, 9, .75, 5, 11, 3, 6, 10, 10,
-          .5, 2, 3, 4, 9, 9
+          .5, 2, 3, 4, 9, 9,
           
           
           
                                             # May's pet ages
+          1, 10, 3, 6, 14
+          
           
           ),
   
@@ -450,11 +452,12 @@ surgery_data <- data.frame(
                            "2024-04-25", "2024-04-25", "2024-04-26", "2024-04-26",
                            "2024-04-26", "2024-04-26", "2024-04-27", "2024-04-27",
                            "2024-04-29", "2024-04-29", "2024-04-29", "2024-04-29",
-                           "2024-04-30", "2024-04-30", "2024-04-30", "2024-04-30"
+                           "2024-04-30", "2024-04-30", "2024-04-30", "2024-04-30",
                            
                            
                                               # May surgery dates
-                           
+                           "2024-05-01", "2024-05-01", "2024-05-01", "2024-05-01", 
+                           "2024-05-01"
                            
                            
                            )),
@@ -472,4 +475,5 @@ print(surgery_data)
 #surgery_data %>% count(surgery_date)
 #surgery_data %>% group_by(species) %>% filter(age == min(age, na.rm = TRUE))
 #mean(surgery_data$age)
-mode <- find_mode(surgery_data, "surgery_date")
+#mode <- find_mode(surgery_data, "surgery_date")
+#print(mode)
