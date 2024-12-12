@@ -280,7 +280,7 @@ surgery_data <- data.frame(
                    "Laceration Repair", "Neuter", "Abscess Repair", "Laceration Repair",
                    "Laceration Repair", "Spay", "Mass Removal", "Dental", "Hematoma", 
                    "Laceration Repair", "Laceration Repair", "Soft Tissue", "Neuter",
-                   "Gastrotomy", "Exploration", "Neuter", "Spay", "Spay", "Laceration Repair",
+                   "Gastrotomy", "Exploratory", "Neuter", "Spay", "Spay", "Laceration Repair",
                    "Gastrotomy", "Spay", "Fracture Repair", "Exploratory", "Enterotomy"
                    
                    ),
@@ -563,7 +563,7 @@ print(surgery_data)
 # Some experimenting with getting data. Possible uses later.
 
 #surgery_data %>% count(species)
-#surgery_data %>% count(surgery_type)
+surgery_data %>% count(surgery_type)
 #surgery_data %>% count(surgery_date)
 #surgery_data %>% group_by(species) %>% filter(age == min(age, na.rm = TRUE))
 #mean(surgery_data$age)
