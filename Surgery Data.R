@@ -95,7 +95,10 @@ surgery_data <- data.frame(
               
               
                                         # May's species
-              "Dog", "Dog", "Cat", "Dog", "Dog"
+              "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Cat", "Cat", "Cat",
+              "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
+              "Dog"
               
               ),
   
@@ -234,7 +237,13 @@ surgery_data <- data.frame(
                    
                    
                                             # May's surgery types
-                   "Neuter", "Mass Removal", "Hematoma", "Laceration Repair", "Enucleation"
+                   "Neuter", "Mass Removal", "Hematoma", "Laceration Repair", "Enucleation",
+                   "Neuter", "Abscess Repair", "Abscess Repair", "Neuter", "Neuter",
+                   "Laceration Repair", "Cystotomy", "Mass Removal", "Cystotomy",
+                   "Pyometra", "Laceration Repair", "Laceration Repair", "Colopexy",
+                   "Laceration Repair", "Laceration Repair", "Neuter", "Spay", "Cystotomy",
+                   "Dental", "Dental", "Dental", "Spay", "Spay", "Spay", "Dystocia", 
+                   "Dental"
                    
                    ),
   
@@ -286,7 +295,8 @@ surgery_data <- data.frame(
           
           
                                             # May's pet ages
-          1, 10, 3, 6, 14
+          1, 10, 3, 6, 14, 7, 7, 10, 1, .5, 3, 1, 12, 7, 9, 8, 15, .92, 6, 4, 2, 2,
+          7, 12, 12, 4, 1, 1, 2, 2, 14
           
           
           ),
@@ -457,8 +467,13 @@ surgery_data <- data.frame(
                            
                                               # May surgery dates
                            "2024-05-01", "2024-05-01", "2024-05-01", "2024-05-01", 
-                           "2024-05-01"
-                           
+                           "2024-05-01", "2024-05-02", "2024-05-02", "2024-05-02",
+                           "2024-05-02", "2024-05-03", "2024-05-03", "2024-05-03",
+                           "2024-05-03", "2024-05-03", "2024-05-04", "2024-05-04",
+                           "2024-05-04", "2024-05-05", "2024-05-05", "2024-05-05",
+                           "2024-05-06", "2024-05-06", "2024-05-06", "2024-05-06",
+                           "2024-05-06", "2024-05-06", "2024-05-06", "2024-05-06",
+                           "2024-05-06", "2024-05-06", "2024-05-06"
                            
                            )),
   
