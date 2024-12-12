@@ -113,6 +113,12 @@ surgery_data <- data.frame(
               "Dog", "Cat", "Cat", "Cat", "Cat", "Dog", "Dog", "Cat", "Dog", "Cat",
               "Dog", "Dog"
               
+              
+              
+                                      # June's species  
+              
+              
+              
               ),
   
   
@@ -283,6 +289,11 @@ surgery_data <- data.frame(
                    "Gastrotomy", "Exploratory", "Neuter", "Spay", "Spay", "Laceration Repair",
                    "Gastrotomy", "Spay", "Fracture Repair", "Exploratory", "Enterotomy"
                    
+                   
+                   
+                                              # June's surgery types
+                   
+                   
                    ),
   
   
@@ -341,6 +352,10 @@ surgery_data <- data.frame(
           4, .66, .83, 1, 6,1, 2, 1, 5, 6, .5, 3, 7, 3, 4, 10, 6, 9, 6, 2, 8, 12, 2,
           1, 9, 2, 1, 5, 3, 9, 6, 6, 4, 6, 3, 2, 8, 10, 5, .58, 4, 4, 6, 3, 1, .75, 
           1, 1, 2, 13, .5, .5, 8, 8
+          
+          
+                                            # June's pet ages
+          
           
           
           ),
@@ -552,6 +567,10 @@ surgery_data <- data.frame(
                            "2024-05-30", "2024-05-30", "2024-05-31", "2024-05-31",
                            "2024-05-31", "2024-05-31"
                            
+                           
+                           
+                                              # June surgery dates
+                           
                            )),
   
   
@@ -563,9 +582,9 @@ print(surgery_data)
 # Some experimenting with getting data. Possible uses later.
 
 #surgery_data %>% count(species)
-surgery_data %>% count(surgery_type)
+#surgery_data %>% count(surgery_type)
 #surgery_data %>% count(surgery_date)
-#surgery_data %>% group_by(species) %>% filter(age == min(age, na.rm = TRUE))
+#surgery_data %>% group_by(species) %>% filter(age == max(age, na.rm = TRUE))
 #mean(surgery_data$age)
 #mode <- find_mode(surgery_data, "surgery_date")
 #print(mode)
