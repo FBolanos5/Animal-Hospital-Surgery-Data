@@ -55,7 +55,6 @@ surgery_data <- data.frame(
               
                           
                                       # March's species  
-              
               "Rabbit", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Cat", "Dog", "Dog",
               "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
@@ -130,6 +129,10 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Cat", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
               "Cat", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Cat", "Cat"
+              
+              
+                                      # July's species
+              
               
               
               ),
@@ -332,6 +335,12 @@ surgery_data <- data.frame(
                    "Spay", "Spay", "Neuter", "Nasal Scope", "Cystotomy", "Spay",
                    "Thoracentesis", "Mass Removal", "Foxtail Removal", "Lens Repair",
                    "Pyometra"
+                   
+                   
+                                            # July's surgery types
+                   
+                   
+                   
                    ),
   
   
@@ -346,6 +355,7 @@ surgery_data <- data.frame(
           11, 14, 10, 3, 2, 2, 10, 11, 14, .5, .66, .83, 13, 13, 10, 11, .66, 1,
           .66, 2, 2, 6, 2, .75,
           
+          
                                             # February's pet ages
           1, .5, 7, 10, 7, 10, 10, 6, 7, .5, 9, 13, 2, 3, .5, .5, .75, 10, 11, .5,
           12, 5, 4, .58, .58, 7, 3, 10, .75, 5, 11, 14, 12, 9, .08, 8, 11, 11, 11,
@@ -357,7 +367,6 @@ surgery_data <- data.frame(
           
           
                                             # March's pet ages
-          
           .5, .5, .5, .5, 3, .75, 8, 7, 5, 8, 10, 13, .66, 1, 8, 8, 4, 1, 10, 8, 9,
           2, 1, .5, 13, 13, 13, 12, 1, .5, .5, 8, .5, 1, 7, 10, 11, 1, 3, 7, 7, .83,
           8, 4, 3, .92, .5, .58, 4, 1, .58, 11, 10, 10, 12, 8, 12, 9, 9, 9, 12, 6,
@@ -400,6 +409,9 @@ surgery_data <- data.frame(
           6, 4, 7, 1, 1, 3, 13, 8, .66, 1, 7, 1, 4, 4, 3, 5, 5, 1, 9, 3, 2, 3, 7, 2,
           3, 11, .66, 10, 5, 10, 5, .66, .33, 5, .5, 15, .5, .66, 18, 11, 3, 9, 11,
           1, 11, 3, .58, 1, 2, 10, 7, 1, 7, 12, 7, 10, 14
+          
+          
+                                            # July's pet ages
           
           
           ),
@@ -650,6 +662,11 @@ surgery_data <- data.frame(
                            "2024-06-28", "2024-06-28", "2024-06-29", "2024-06-29",
                            "2024-06-29", "2024-06-30", "2024-06-30"
                            
+                           
+                                            # July surgery dates
+                           
+                           
+                           
                            )),
   
   
@@ -660,9 +677,9 @@ print(surgery_data)
 
 # Some experimenting with getting data. Possible uses later.
 
-surgery_data %>% count(species)
-surgery_data %>% count(surgery_type)
-surgery_data %>% count(surgery_date)
+#surgery_data %>% count(species)
+#surgery_data %>% count(surgery_type)
+#surgery_data %>% count(surgery_date)
 #surgery_data %>% group_by(species) %>% filter(age == max(age, na.rm = TRUE))
 #mean(surgery_data$age)
 #mode <- find_mode(surgery_data, "surgery_date")
