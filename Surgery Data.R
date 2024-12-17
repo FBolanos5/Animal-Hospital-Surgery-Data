@@ -111,12 +111,12 @@ surgery_data <- data.frame(
               "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
               "Dog", "Cat", "Cat", "Cat", "Cat", "Dog", "Dog", "Cat", "Dog", "Cat",
-              "Dog", "Dog"
+              "Dog", "Dog",
               
               
               
                                       # June's species  
-              
+              "Dog", "Cat", "Dog", "Dog"
               
               
               ),
@@ -287,12 +287,12 @@ surgery_data <- data.frame(
                    "Laceration Repair", "Spay", "Mass Removal", "Dental", "Hematoma", 
                    "Laceration Repair", "Laceration Repair", "Soft Tissue", "Neuter",
                    "Gastrotomy", "Exploratory", "Neuter", "Spay", "Spay", "Laceration Repair",
-                   "Gastrotomy", "Spay", "Fracture Repair", "Exploratory", "Enterotomy"
+                   "Gastrotomy", "Spay", "Fracture Repair", "Exploratory", "Enterotomy",
                    
                    
                    
                                               # June's surgery types
-                   
+                   "Pyometra", "Laceration Repair", "Foxtail Removal", "Laceration Repair"
                    
                    ),
   
@@ -351,11 +351,11 @@ surgery_data <- data.frame(
           5, 5, .83, 1, 3, 6, 2, 2, 4, 13, 3, .5, .5, 2, 2, 13, 1, .66, 6, 8, 12, 4,
           4, .66, .83, 1, 6,1, 2, 1, 5, 6, .5, 3, 7, 3, 4, 10, 6, 9, 6, 2, 8, 12, 2,
           1, 9, 2, 1, 5, 3, 9, 6, 6, 4, 6, 3, 2, 8, 10, 5, .58, 4, 4, 6, 3, 1, .75, 
-          1, 1, 2, 13, .5, .5, 8, 8
+          1, 1, 2, 13, .5, .5, 8, 8,
           
           
                                             # June's pet ages
-          
+          11, 1, 12, 5
           
           
           ),
@@ -565,11 +565,12 @@ surgery_data <- data.frame(
                            "2024-05-28", "2024-05-29", "2024-05-29", "2024-05-29",
                            "2024-05-29", "2024-05-30", "2024-05-30", "2024-05-30",
                            "2024-05-30", "2024-05-30", "2024-05-31", "2024-05-31",
-                           "2024-05-31", "2024-05-31"
+                           "2024-05-31", "2024-05-31",
                            
                            
                            
                                               # June surgery dates
+                           "2024-06-01", "2024-06-01", "2024-06-02", "2024-06-02"
                            
                            )),
   
