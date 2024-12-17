@@ -308,7 +308,7 @@ surgery_data <- data.frame(
                    "Pyometra", "Laceration Repair", "Foxtail Removal", "Laceration Repair",
                    "Spay", "Neuter", "Mass Removal", "Dental", "Dental", "Dental",
                    "Mass Removal", "Gastric Tube Insertion", "Neuter", "Ablation",
-                   "Spay", "Neuter", "Netuer", "Mass Removal", "Laceration Repair",
+                   "Spay", "Neuter", "Neuter", "Mass Removal", "Laceration Repair",
                    "Hematoma", "Spay", "Spay", "Spay", "Neuter", "Neuter", "Mass Removal",
                    "Neuter", "Mass Removal", "Exploratory", "Dental", "Laceration Repair",
                    "Mass Removal", "Neuter", "Dental", "Laceration Repair", "Mass Removal",
@@ -316,11 +316,11 @@ surgery_data <- data.frame(
                    "Spay", "Spay", "Mass Removal", "Dental", "Dental", "Neuter",
                    "Spay", "Spay", "Foxtail Removal", "Dental", "Spay", "Mass Removal",
                    "Spay", "Mass Removal", "Mass Removal", "Pinnectomy", "Spay", "Spay",
-                   "Soft Tissue", "Neuter", "Neuter", "Spay", "Netuer", "Spay", "Mass Removal",
+                   "Soft Tissue", "Neuter", "Neuter", "Spay", "Neuter", "Spay", "Mass Removal",
                    "Spay", "Mass Removal", "C-Section", "Spay", "Laceration Repair",
                    "Abscess Repair", "Exploratory", "Exploratory", "Exploratory", 
                    "Foxtail Removal", "Mass Removal", "TPLO", "Cystotomy", "Mass Removal",
-                   "Dental", "Dental", "Laceration Repair", "Mass Repair", "Fracture Repair",
+                   "Dental", "Dental", "Laceration Repair", "Mass Removal", "Fracture Repair",
                    "Spay", "Spay", "Neuter", "Mass Removal", "Dental", "Spay", "Spay",
                    "Dental", "Fracture Repair", "Exploratory", "Enterotomy", "Laceration Repair",
                    "Dental", "Mass Removal", "Spay", "Mass Removal", "Enucleation",
@@ -660,9 +660,9 @@ print(surgery_data)
 
 # Some experimenting with getting data. Possible uses later.
 
-#surgery_data %>% count(species)
-#surgery_data %>% count(surgery_type)
-#surgery_data %>% count(surgery_date)
+surgery_data %>% count(species)
+surgery_data %>% count(surgery_type)
+surgery_data %>% count(surgery_date)
 #surgery_data %>% group_by(species) %>% filter(age == max(age, na.rm = TRUE))
 #mean(surgery_data$age)
 #mode <- find_mode(surgery_data, "surgery_date")
