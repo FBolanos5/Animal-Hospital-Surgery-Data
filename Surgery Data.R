@@ -126,7 +126,10 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog",
               "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Cat", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog"
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Cat", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
+              "Cat", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Cat", "Cat"
               
               
               ),
@@ -322,7 +325,13 @@ surgery_data <- data.frame(
                    "Dental", "Fracture Repair", "Exploratory", "Enterotomy", "Laceration Repair",
                    "Dental", "Mass Removal", "Spay", "Mass Removal", "Enucleation",
                    "Enterotomy", "Laceration Repair", "Cystotomy", "Laceration Repair",
-                   "Foxtail Removal", "Exploratory"
+                   "Foxtail Removal", "Exploratory", "Neuter", "Neuter", "Mass Removal",
+                   "Dental", "Dental", "Mass Removal", "Laceration Repair", "Laceration Repair",
+                   "Spay", "Laceration Repair", "Spay", "Spay", "Laceration Repair",
+                   "Neuter", "Neuter", "Dental", "Dental", "Spay", "Spay", "Pyometra",
+                   "Spay", "Spay", "Neuter", "Nasal Scope", "Cystotomy", "Spay",
+                   "Thoracentesis", "Mass Removal", "Foxtail Removal", "Lens Repair",
+                   "Pyometra"
                    ),
   
   
@@ -389,7 +398,8 @@ surgery_data <- data.frame(
           1, 11, 2, 2, .58, 11, 13, 11, 3, 3, 8, 10, 7, 6, 9, .66, 12, 5, 11, 1, 2, 
           11, 1, 1, 2, 1, 1, 1, 2, 10, 2, 2, 8, 10, 8, 5, 1, 5, 8, 8, 9, 11, 14, 15,
           6, 4, 7, 1, 1, 3, 13, 8, .66, 1, 7, 1, 4, 4, 3, 5, 5, 1, 9, 3, 2, 3, 7, 2,
-          3, 11
+          3, 11, .66, 10, 5, 10, 5, .66, .33, 5, .5, 15, .5, .66, 18, 11, 3, 9, 11,
+          1, 11, 3, .58, 1, 2, 10, 7, 1, 7, 12, 7, 10, 14
           
           
           ),
@@ -630,7 +640,15 @@ surgery_data <- data.frame(
                            "2024-06-20", "2024-06-20", "2024-06-20", "2024-06-20",
                            "2024-06-20", "2024-06-21", "2024-06-21", "2024-06-21",
                            "2024-06-21", "2024-06-21", "2024-06-22", "2024-06-22",
-                           "2024-06-23", "2024-06-23", "2024-06-23", "2024-06-23"
+                           "2024-06-23", "2024-06-23", "2024-06-23", "2024-06-23",
+                           "2024-06-24", "2024-06-24", "2024-06-24", "2024-06-24",
+                           "2024-06-24", "2024-06-24", "2024-06-24", "2024-06-24",
+                           "2024-06-25", "2024-06-25", "2024-06-25", "2024-06-25",
+                           "2024-06-25", "2024-06-26", "2024-06-26", "2024-06-27",
+                           "2024-06-27", "2024-06-27", "2024-06-27", "2024-06-27",
+                           "2024-06-28", "2024-06-28", "2024-06-28", "2024-06-28",
+                           "2024-06-28", "2024-06-28", "2024-06-29", "2024-06-29",
+                           "2024-06-29", "2024-06-30", "2024-06-30"
                            
                            )),
   
