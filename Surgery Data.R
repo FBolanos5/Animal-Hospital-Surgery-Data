@@ -139,7 +139,11 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog"
+              "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog",
+              "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Cat",
+              "Cat", "Dog", "Dog", "Dog", "Dog"
               
               
               ),
@@ -360,7 +364,14 @@ surgery_data <- data.frame(
                    "Mass Removal", "Laceration Repair", "Foxtail Removal", "Hematoma Repair",
                    "Pyometra", "Laceration Repair", "Laceration Repair", "Abdominocentesis",
                    "Abscess Repair", "Abscess Repair", "Mass Removal", "Dental", "Spay",
-                   "Spay", "Dental", "Mass Removal", "Mass Removal", "Neuter", "Pyometra"
+                   "Spay", "Dental", "Mass Removal", "Mass Removal", "Neuter", "Pyometra",
+                   "Nasal Scope", "Soft Tissue", "Cystotomy", "Foxtail Removal", "Spay",
+                   "Neuter", "Spay", "Mass Removal", "Spay", "Dental", "Laceration Repair",
+                   "Mass Removal", "Dental", "Dental", "TPLO", "Amputation", "Spay",
+                   "Neuter", "Pyometra", "Mass Removal", "Abscess Repair", "Laceration Repair",
+                   "Abscess Repair", "Spay", "Gastropexy", "Dental", "Pyometra", 
+                   "Abscess Repair", "Laceration Repair", "Cruciate Repair", "Abscess Repair",
+                   "Dental", "Abscess Repair", "Gastrotomy", "Mass Removal", "Amputation"
                    
                    
                    ),
@@ -437,7 +448,9 @@ surgery_data <- data.frame(
           3, 9, 9, 2, 2, .5, 1, .75, 12, 2, 6, 6, 7, 14, 11, 7, 7, .66, 14, 13, 13,
           2, 1, 11, 5, 5, 1, 3, 1, 12, 12, 4, .5, .66, 9, 9, 1, 1, 9, .58, 3, 1, .5,
           2, 5, 5, .92, 7, 9, 2, 3, 2, 2, 12, 14, 11, 1, 11, 4, 9, 1, 1, 5, 6, 9, 12,
-          5, 12, 8, 10, 8, 7, 1, 1, 13, 7, 15, 3, 1
+          5, 12, 8, 10, 8, 7, 1, 1, 13, 7, 15, 3, 1, 12, 13, 14, 5, .92, .33, 9, 9,
+          2, 12, 14, 1, 9, 6, 5, 6, 1, 2, 10, 10, 5, 2, 12, 2, 2, 3, 15, 4, 1, 12, 4,
+          13, 7, 3, 12, 3
           
           ),
   
@@ -708,7 +721,16 @@ surgery_data <- data.frame(
                            "2024-07-13", "2024-07-13", "2024-07-13", "2024-07-14",
                            "2024-07-14", "2024-07-14", "2024-07-15", "2024-07-15",
                            "2024-07-15", "2024-07-15", "2024-07-15", "2024-07-16",
-                           "2024-07-16", "2024-07-16", "2024-07-16"
+                           "2024-07-16", "2024-07-16", "2024-07-16", "2024-07-17",
+                           "2024-07-17", "2024-07-17", "2024-07-17", "2024-07-18",
+                           "2024-07-18", "2024-07-18", "2024-07-18", "2024-07-18",
+                           "2024-07-18", "2024-07-18", "2024-07-18", "2024-07-18",
+                           "2024-07-18", "2024-07-19", "2024-07-19", "2024-07-19",
+                           "2024-07-19", "2024-07-19", "2024-07-19", "2024-07-19",
+                           "2024-07-21", "2024-07-21", "2024-07-22", "2024-07-22",
+                           "2024-07-22", "2024-07-22", "2024-07-22", "2024-07-22",
+                           "2024-07-23", "2024-07-23", "2024-07-24", "2024-07-24",
+                           "2024-07-24", "2024-07-24", "2024-07-24"
                            
                            
                            )),
