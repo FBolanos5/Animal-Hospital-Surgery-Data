@@ -132,7 +132,11 @@ surgery_data <- data.frame(
               
               
                                       # July's species
-              "Dog", "Dog", "Cat", "Cat", "Dog"
+              "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Cat", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog"
               
               
               ),
@@ -203,7 +207,7 @@ surgery_data <- data.frame(
                                             # March's surgery types
                    
                    "Neuter", "Neuter", "Spay", "Spay", "Laceration Repair", "Laceration Repair",
-                   "Laceration Repair", "Laceration Repair", "ACL Repair", "TPLO",
+                   "Laceration Repair", "Laceration Repair", "Cruciate Repair", "TPLO",
                    "Dental", "Dental", "Spay", "Neuter", "Mass Removal", "Dental",
                    "Mass Removal", "Neuter", "Abscess Repair", "Mass Removal", "Amputation",
                    "Neuter", "Neuter", "Neuter", "Neuter", "Adenoma Removal", "Ablation",
@@ -213,7 +217,7 @@ surgery_data <- data.frame(
                    "Spay", "Dental", "Aspiration", "Abscess Repair", "Spay", "Spay",
                    "Spay", "Abscess Repair", "Laceration Repair", "Fish Hook Removal", 
                    "Laceration Repair", "Mass Removal", "Dental", "Dental", "Pyometra", 
-                   "Mass Removal",  "Mass Removal", "Pin Removal", "ACL Repair", 
+                   "Mass Removal",  "Mass Removal", "Pin Removal", "Cruciate Repair", 
                    "Dental", "Abscess Repair", "Abscess Repair", "TPLO", "Mass Removal",
                    "Mass Removal", "Spay", "Spay", "Spay", "Laceration Repair", 
                    "Laceration Repair", "Spay", "Mass Removal", "Cystotomy", "Neuter",
@@ -338,7 +342,15 @@ surgery_data <- data.frame(
                    
                    
                                             # July's surgery types
-                   "Neuter", "Mass Removal", "Dental", "Dental", "Foxtail Removal"
+                   "Neuter", "Mass Removal", "Dental", "Dental", "Foxtail Removal",
+                   "Neuter", "Neuter", "Neuter", "Mass Removal", "Spay", "Mass Removal",
+                   "Dental", "Dental", "Abscess Repair", "Cruciate Repair", "Mass Removal",
+                   "Neuter", "Neuter", "Mass Removal", "Spay", "Prolapse Repair",
+                   "Abscess Repair", "Foxtail Removal", "Abscess Repair", "Mass Removal",
+                   "Pyometra", "Abscess Repair", "Spay", "Neuter", "Mass Removal",
+                   "Dental", "Dental", "Spay", "Amputation", "Abscess Repair", 
+                   "Abdominocentesis", "Neuter", "Neuter", "Hematoma", "Neuter",
+                   "Salivary Gland Excision"
                    
                    
                    ),
@@ -412,7 +424,8 @@ surgery_data <- data.frame(
           
           
                                             # July's pet ages
-          3, 9, 9, 2, 2
+          3, 9, 9, 2, 2, .5, 1, .75, 12, 2, 6, 6, 7, 14, 11, 7, 7, .66, 14, 13, 13,
+          2, 1, 11, 5, 5, 1, 3, 1, 12, 12, 4, .5, .66, 9, 9, 1, 1, 9, .58, 3
           
           ),
   
@@ -665,7 +678,16 @@ surgery_data <- data.frame(
                            
                                             # July surgery dates
                            "2024-07-01", "2024-07-01", "2024-07-01", "2024-07-01",
-                           "2024-07-01"
+                           "2024-07-01", "2024-07-02", "2024-07-02", "2024-07-02", 
+                           "2024-07-02", "2024-07-03", "2024-07-03", "2024-07-03",
+                           "2024-07-03", "2024-07-04", "2024-07-05", "2024-07-05",
+                           "2024-07-05", "2024-07-05", "2024-07-05", "2024-07-05",
+                           "2024-07-05", "2024-07-05", "2024-07-05", "2024-07-06",
+                           "2024-07-06", "2024-07-06", "2024-07-07", "2024-07-08",
+                           "2024-07-08", "2024-07-08", "2024-07-08", "2024-07-08",
+                           "2024-07-08", "2024-07-08", "2024-07-08", "2024-07-08",
+                           "2024-07-09", "2024-07-09", "2024-07-09", "2024-07-09",
+                           "2024-07-09"
                            
                            
                            )),
