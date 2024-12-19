@@ -149,6 +149,10 @@ surgery_data <- data.frame(
               "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Hamster"
               
               
+              
+                                       # August's species
+              
+              
               ),
   
   
@@ -278,7 +282,7 @@ surgery_data <- data.frame(
                    "Laceration Repair", "Laceration Repair", "Spay", "Dental", "Mass Removal",
                    "Spay", "Neuter", "Cruciate Repair", "Spay", "Neuter", "Dental", "Dental",
                    "Spay", "Mass Removal", "Laceration Repair", "Dental", "Dental",
-                   "Laceration Repair", "Abscess Repair", "Nasal Scope", " Laceration Repair",
+                   "Laceration Repair", "Abscess Repair", "Nasal Scope", "Laceration Repair",
                    "Abscess Repair", "Neuter", "Spay", "Mass Removal", "Laceration Repair",
                    "Gastric Tube Insertion", "Mass Removal", "Mass Removal", "Spay",
                    "Spay", "Laceration Repair", "Gastrotomy", "Gallbladder Removal",
@@ -364,7 +368,7 @@ surgery_data <- data.frame(
                    "Dental", "Spay", "Mass Removal", "Dental", "Dental", "Neuter",
                    "Cystotomy", "Neuter", "Dental", "Dental", "Abscess Repair",
                    "Abscess Repair", "Laceration Repair", "Neuter", "Mass Removal",
-                   "Mass Removal", "Laceration Repair", "Foxtail Removal", "Hematoma Repair",
+                   "Mass Removal", "Laceration Repair", "Foxtail Removal", "Hematoma",
                    "Pyometra", "Laceration Repair", "Laceration Repair", "Abdominocentesis",
                    "Abscess Repair", "Abscess Repair", "Mass Removal", "Dental", "Spay",
                    "Spay", "Dental", "Mass Removal", "Mass Removal", "Neuter", "Pyometra",
@@ -381,6 +385,11 @@ surgery_data <- data.frame(
                    "Fracture Repair", "Pyometra", "Spay", "Dental", "Abdominocentesis",
                    "Spay", "Spay", "Hematoma", "Spay", "Abscess Repair", "Spay", "Spay",
                    "Pyometra", "Spay", "Neuter", "Mass Removal", "Dental"
+                   
+                   
+                   
+                                        # August's surgery types
+                   
                    
                    ),
   
@@ -460,6 +469,10 @@ surgery_data <- data.frame(
           2, 12, 14, 1, 9, 6, 5, 6, 1, 2, 10, 10, 5, 2, 12, 2, 2, 3, 15, 4, 1, 12, 4,
           13, 7, 3, 12, 3, 3, 1, 8, 13, 3, 12, 10, 7, 13, 10, 11, 1, 8, 10, 1, 6, 5,
           4, 12, 11, .25, 7, 12, 1, 7, 1, .92, 9, 1, 9, 7, 2
+          
+          
+          
+                                            # August's pet ages
           
           ),
   
@@ -750,6 +763,8 @@ surgery_data <- data.frame(
                            "2024-07-31", "2024-07-31", "2024-07-31"
                            
                            
+                                              # August surgery dates
+                           
                            
                            )),
   
@@ -765,6 +780,7 @@ print(surgery_data)
 #surgery_data %>% count(surgery_type)
 #surgery_data %>% count(surgery_date)
 #surgery_data %>% group_by(species) %>% filter(age == max(age, na.rm = TRUE))
+#surgery_data %>% group_by(species) %>% filter(age == min(age, na.rm = TRUE))
 #mean(surgery_data$age)
 #mode <- find_mode(surgery_data, "surgery_date")
 #print(mode)
