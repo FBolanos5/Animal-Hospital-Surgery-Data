@@ -154,7 +154,11 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Dog", "Dog", "Cat", "Dog"
+              "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog", "Cat",
+              "Dog", "Cat", "Cat", "Cat", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog"
               
               ),
   
@@ -397,7 +401,16 @@ surgery_data <- data.frame(
                    "Laceration Repair", "Mass Removal", "Spay",  "Neuter", "Soft Tissue",
                    "Dental", "Dental", "Spay", "Mass Removal", "Laceration Repair", "Abscess Repair",
                    "Spay", "Neuter", "Dental", "Dental", "Enterotomy", "Neuter", "Spay", "Pyometra",
-                   "Pyometra", "Spay", "Dental", "Mass Removal", "Mass Removal", "Abscess Repair"
+                   "Pyometra", "Spay", "Dental", "Mass Removal", "Mass Removal", "Abscess Repair",
+                   "Spay", "Mass Removal", "Abscess Repair", "Spay", "Cruciate Repair",
+                   "Spay", "Mass Removal", "Amputation", "Mass Removal", "Mass Removal",
+                   "Abscess Repair", "Exploratory", "CT Scan", "Nasal Scope", "CT Scan",
+                   "Hernia Repair", "Neuter", "Abscess Repair", "Spay", "Abscess Repair",
+                   "Mass Removal", "Dental", "Medial Patella Luxation", "Cruciate Repair",
+                   "Dental", "Fracture Repair", "Nasal Scope", "Abscess Repair",
+                   "Laceration Repair", "Laceration Repair", "Laceration Repair",
+                   "Laceration Repair", "Mass Removal", "Tonometer", "Dental",
+                   "Laceration Repair"
                    
                    ),
   
@@ -482,7 +495,9 @@ surgery_data <- data.frame(
           
                                             # August's pet ages
           2, .5, 5, 15, 10, 8, 12, 12, 12, 10, 1, 1, 8, .5, 1, 8, 8, 11, 1, 10, 7,
-          2, .5, 1, 9, 10, 2, 8, 2, 12, 7, .5, 5, 4, 14, 11
+          2, .5, 1, 9, 10, 2, 8, 2, 12, 7, .5, 5, 4, 14, 11, 2, 3, 1, .42, 6, 5, 10,
+          3, 12, 7, 2, 5, 6, 6, 8, 6, .5, 6, 10, 12, 2, 8, 5, 5, 8, 6, .92, 15, .17,
+          15, 1, 12, 8, 16, 2, 8
           ),
   
   
@@ -781,7 +796,16 @@ surgery_data <- data.frame(
                            "2024-08-04", "2024-08-04", "2024-08-05", "2024-08-05",
                            "2024-08-05", "2024-08-05", "2024-08-05", "2024-08-06",
                            "2024-08-06", "2024-08-06", "2024-08-07", "2024-08-07",
-                           "2024-08-07", "2024-08-08", "2024-08-08", "2024-08-08"
+                           "2024-08-07", "2024-08-08", "2024-08-08", "2024-08-08",
+                           "2024-08-09", "2024-08-09", "2024-08-10", "2024-08-12",
+                           "2024-08-12", "2024-08-12", "2024-08-12", "2024-08-12",
+                           "2024-08-12", "2024-08-12", "2024-08-12", "2024-08-12",
+                           "2024-08-13", "2024-08-13", "2024-08-13", "2024-08-13",
+                           "2024-08-13", "2024-08-13", "2024-08-14", "2024-08-14",
+                           "2024-08-14", "2024-08-14", "2024-08-14", "2024-08-14",
+                           "2024-08-14", "2024-08-15", "2024-08-15", "2024-08-15",
+                           "2024-08-15", "2024-08-15", "2024-08-15", "2024-08-15",
+                           "2024-08-16", "2024-08-16", "2024-08-16", "2024-08-16"
                            
                            )),
   
