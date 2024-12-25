@@ -146,12 +146,13 @@ surgery_data <- data.frame(
               "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Cat",
-              "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Hamster"
+              "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Hamster",
               
               
               
                                        # August's species
-              
+              "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog"
               
               ),
   
@@ -384,12 +385,14 @@ surgery_data <- data.frame(
                    "Exploratory", "Mass Removal", "Nail Removal", "Laceration Repair",
                    "Fracture Repair", "Pyometra", "Spay", "Dental", "Abdominocentesis",
                    "Spay", "Spay", "Hematoma", "Spay", "Abscess Repair", "Spay", "Spay",
-                   "Pyometra", "Spay", "Neuter", "Mass Removal", "Dental"
+                   "Pyometra", "Spay", "Neuter", "Mass Removal", "Dental",
                    
                    
                    
                                         # August's surgery types
-                   
+                   "Neuter", "Spay", "Abscess Repair", "Dental", "Dental", "Neuter",
+                   "Mass Removal", "Neuter", "Dental", "Pyometra", "Foxtail Removal",
+                   "Laceration Repair", "Mass Removal"
                    
                    ),
   
@@ -468,12 +471,12 @@ surgery_data <- data.frame(
           5, 12, 8, 10, 8, 7, 1, 1, 13, 7, 15, 3, 1, 12, 13, 14, 5, .92, .33, 9, 9,
           2, 12, 14, 1, 9, 6, 5, 6, 1, 2, 10, 10, 5, 2, 12, 2, 2, 3, 15, 4, 1, 12, 4,
           13, 7, 3, 12, 3, 3, 1, 8, 13, 3, 12, 10, 7, 13, 10, 11, 1, 8, 10, 1, 6, 5,
-          4, 12, 11, .25, 7, 12, 1, 7, 1, .92, 9, 1, 9, 7, 2
+          4, 12, 11, .25, 7, 12, 1, 7, 1, .92, 9, 1, 9, 7, 2,
           
           
           
                                             # August's pet ages
-          
+          2, .5, 5, 15, 10, 8, 12, 12, 12, 10, 1, 1, 8
           ),
   
   
@@ -760,11 +763,14 @@ surgery_data <- data.frame(
                            "2024-07-29", "2024-07-29", "2024-07-29", "2024-07-30",
                            "2024-07-30", "2024-07-30", "2024-07-30", "2024-07-30",
                            "2024-07-31", "2024-07-31", "2024-07-31", "2024-07-31",
-                           "2024-07-31", "2024-07-31", "2024-07-31"
+                           "2024-07-31", "2024-07-31", "2024-07-31",
                            
                            
                                               # August surgery dates
-                           
+                           "2024-08-01", "2024-08-01", "2024-08-01", "2024-08-01",
+                           "2024-08-01", "2024-08-01", "2024-08-01", "2024-08-01",
+                           "2024-08-01", "2024-08-01", "2024-08-01", "2024-08-01",
+                           "2024-08-01"
                            
                            )),
   
