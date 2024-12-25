@@ -152,7 +152,9 @@ surgery_data <- data.frame(
               
                                        # August's species
               "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Dog"
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Cat", "Dog"
               
               ),
   
@@ -392,7 +394,10 @@ surgery_data <- data.frame(
                                         # August's surgery types
                    "Neuter", "Spay", "Abscess Repair", "Dental", "Dental", "Neuter",
                    "Mass Removal", "Neuter", "Dental", "Pyometra", "Foxtail Removal",
-                   "Laceration Repair", "Mass Removal"
+                   "Laceration Repair", "Mass Removal", "Spay",  "Neuter", "Soft Tissue",
+                   "Dental", "Dental", "Spay", "Mass Removal", "Laceration Repair", "Abscess Repair",
+                   "Spay", "Neuter", "Dental", "Dental", "Enterotomy", "Neuter", "Spay", "Pyometra",
+                   "Pyometra", "Spay", "Dental", "Mass Removal", "Mass Removal", "Abscess Repair"
                    
                    ),
   
@@ -476,7 +481,8 @@ surgery_data <- data.frame(
           
           
                                             # August's pet ages
-          2, .5, 5, 15, 10, 8, 12, 12, 12, 10, 1, 1, 8
+          2, .5, 5, 15, 10, 8, 12, 12, 12, 10, 1, 1, 8, .5, 1, 8, 8, 11, 1, 10, 7,
+          2, .5, 1, 9, 10, 2, 8, 2, 12, 7, .5, 5, 4, 14, 11
           ),
   
   
@@ -770,7 +776,12 @@ surgery_data <- data.frame(
                            "2024-08-01", "2024-08-01", "2024-08-01", "2024-08-01",
                            "2024-08-01", "2024-08-01", "2024-08-01", "2024-08-01",
                            "2024-08-01", "2024-08-01", "2024-08-01", "2024-08-01",
-                           "2024-08-01"
+                           "2024-08-01", "2024-08-02", "2024-08-02", "2024-08-02",
+                           "2024-08-02", "2024-08-02", "2024-08-02", "2024-08-02", 
+                           "2024-08-04", "2024-08-04", "2024-08-05", "2024-08-05",
+                           "2024-08-05", "2024-08-05", "2024-08-05", "2024-08-06",
+                           "2024-08-06", "2024-08-06", "2024-08-07", "2024-08-07",
+                           "2024-08-07", "2024-08-08", "2024-08-08", "2024-08-08"
                            
                            )),
   
