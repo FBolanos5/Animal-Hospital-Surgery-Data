@@ -168,6 +168,9 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Cat", "Cat", "Dog"
               
+              
+                                      # September's species
+              
               ),
   
   
@@ -433,9 +436,13 @@ surgery_data <- data.frame(
                    "Abscess Repair", "Laceration Repair", "Pyometra", "Pyometra",
                    "Spay", "Exploratory", "Nasal Scope", "Laceration Repair", 
                    "Laceration Repair", "Mass Removal", "Dental", "Dental", "Mass Removal",
-                   "Spay", "Cherry Eye Surgery", "Dental", "Dental", "Abscess Repair", 
-                   "Mass Removal", "Dental", "Laceration", "Blood Transfusion", "Endoscopy",
+                   "Spay", "Cherry Eye", "Dental", "Dental", "Abscess Repair", 
+                   "Mass Removal", "Dental", "Laceration Repair", "Blood Transfusion", "Endoscopy",
                    "Prolapse Repair"
+                   
+                   
+                                            # September's Surgery types
+                   
                    
                    ),
   
@@ -527,6 +534,11 @@ surgery_data <- data.frame(
           11, 8, .58, 1, 3, 10, 3, 6, 7, 7, 2, 2, 5, 2, 2, 9, 9, 9, 9,13, 1, 14, 10,
           1, 1, .58, 7, 1, 11, 6, 13, .5, 2, 8, 4, 4, 10, 12, 11, 9, 2, .53, 6, 9,
           12, 11, 11, 10, 4, 5, .08
+          
+          
+          
+                                            # September's pet ages
+          
           ),
   
   
@@ -856,6 +868,9 @@ surgery_data <- data.frame(
                            "2024-08-29", "2024-08-29", "2024-08-29", "2024-08-29",
                            "2024-08-29", "2024-08-30", "2024-08-30", "2024-08-30",
                            "2024-08-30", "2024-08-31", "2024-08-31"
+                           
+                           
+                                          # September surgery dates
                            
                            )),
   
