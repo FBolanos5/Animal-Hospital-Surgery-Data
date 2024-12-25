@@ -161,7 +161,12 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog",
               "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog",
               "Cat", "Cat", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Cat", "Dog"
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Cat", "Dog",
+              "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Cat", "Cat", "Dog"
               
               ),
   
@@ -420,7 +425,17 @@ surgery_data <- data.frame(
                    "Hernia Repair", "Mass Removal", "Spay", "Dental", "Fracture Repair",
                    "Mass Removal", "Spay", "Exploratory", "Dental", "Dental", "Spay",
                    "Abscess Repair", "TPLO", "Dental", "Neuter", "Spay", "Spay",
-                   "Abdominocentesis"
+                   "Abdominocentesis", "Abscess Repair", "Laceration Repair", "Laceration Repair",
+                   "Laceration Repair", "Abscess Repair", "Abscess Repair","Abscess Repair",
+                   "Laceration Repair", "Neuter", "Mass Removal", "Mass Removal",
+                   "Dental", "Dental", "Mass Removal", "Neuter", "Dental", "Dental",
+                   "Abscess Repair", "Laceration Repair", "Neuter", "Mass Removal",
+                   "Abscess Repair", "Laceration Repair", "Pyometra", "Pyometra",
+                   "Spay", "Exploratory", "Nasal Scope", "Laceration Repair", 
+                   "Laceration Repair", "Mass Removal", "Dental", "Dental", "Mass Removal",
+                   "Spay", "Cherry Eye Surgery", "Dental", "Dental", "Abscess Repair", 
+                   "Mass Removal", "Dental", "Laceration", "Blood Transfusion", "Endoscopy",
+                   "Prolapse Repair"
                    
                    ),
   
@@ -509,7 +524,9 @@ surgery_data <- data.frame(
           3, 12, 7, 2, 5, 6, 6, 8, 6, .5, 6, 10, 12, 2, 8, 5, 5, 8, 6, .92, 15, .17,
           15, 1, 12, 8, 16, 2, 8, 2, 2, 1, 15, 15, 9, .33, 13, 3, 11, 3, 3, 11, 2, 
           1, 7, .58, .58, .58, .58, 4, .66, .83, 9, .33, 3, .5, .83, 8, 7, .5, 3,
-          11, 8, .58, 1, 3, 10
+          11, 8, .58, 1, 3, 10, 3, 6, 7, 7, 2, 2, 5, 2, 2, 9, 9, 9, 9,13, 1, 14, 10,
+          1, 1, .58, 7, 1, 11, 6, 13, .5, 2, 8, 4, 4, 10, 12, 11, 9, 2, .53, 6, 9,
+          12, 11, 11, 10, 4, 5, .08
           ),
   
   
@@ -827,7 +844,18 @@ surgery_data <- data.frame(
                            "2024-08-22", "2024-08-22", "2024-08-22", "2024-08-22",
                            "2024-08-22", "2024-08-22", "2024-08-22", "2024-08-22",
                            "2024-08-23", "2024-08-23", "2024-08-23", "2024-08-23",
-                           "2024-08-23", "2024-08-23"
+                           "2024-08-23", "2024-08-23", "2024-08-24", "2024-08-24",
+                           "2024-08-24", "2024-08-25", "2024-08-25", "2024-08-25",
+                           "2024-08-25", "2024-08-25", "2024-08-25", "2024-08-26",
+                           "2024-08-26", "2024-08-26", "2024-08-26", "2024-08-26",
+                           "2024-08-26", "2024-08-26", "2024-08-26", "2024-08-26",
+                           "2024-08-26", "2024-08-27", "2024-08-27", "2024-08-27",
+                           "2024-08-27", "2024-08-27", "2024-08-27", "2024-08-28",
+                           "2024-08-28", "2024-08-28", "2024-08-28", "2024-08-28",
+                           "2024-08-29", "2024-08-29", "2024-08-29", "2024-08-29",
+                           "2024-08-29", "2024-08-29", "2024-08-29", "2024-08-29",
+                           "2024-08-29", "2024-08-30", "2024-08-30", "2024-08-30",
+                           "2024-08-30", "2024-08-31", "2024-08-31"
                            
                            )),
   
