@@ -166,11 +166,11 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Cat", "Cat", "Dog"
+              "Dog", "Dog", "Cat", "Cat", "Dog",
               
               
                                       # September's species
-              
+              "Cat", "Cat", "Dog", "Dog", "Dog", "Dog"
               ),
   
   
@@ -438,11 +438,12 @@ surgery_data <- data.frame(
                    "Laceration Repair", "Mass Removal", "Dental", "Dental", "Mass Removal",
                    "Spay", "Cherry Eye", "Dental", "Dental", "Abscess Repair", 
                    "Mass Removal", "Dental", "Laceration Repair", "Blood Transfusion", "Endoscopy",
-                   "Prolapse Repair"
+                   "Prolapse Repair",
                    
                    
                                             # September's Surgery types
-                   
+                   "Thoracentesis", "Exploratory", "Laceration Repair", "Laceration Repair",
+                   "Laceration Repair", "Laceration Repair"
                    
                    ),
   
@@ -533,12 +534,12 @@ surgery_data <- data.frame(
           1, 7, .58, .58, .58, .58, 4, .66, .83, 9, .33, 3, .5, .83, 8, 7, .5, 3,
           11, 8, .58, 1, 3, 10, 3, 6, 7, 7, 2, 2, 5, 2, 2, 9, 9, 9, 9,13, 1, 14, 10,
           1, 1, .58, 7, 1, 11, 6, 13, .5, 2, 8, 4, 4, 10, 12, 11, 9, 2, .53, 6, 9,
-          12, 11, 11, 10, 4, 5, .08
+          12, 11, 11, 10, 4, 5, .08,
           
           
           
                                             # September's pet ages
-          
+          1, 6, 3, 11, 2, 5
           ),
   
   
@@ -867,11 +868,12 @@ surgery_data <- data.frame(
                            "2024-08-29", "2024-08-29", "2024-08-29", "2024-08-29",
                            "2024-08-29", "2024-08-29", "2024-08-29", "2024-08-29",
                            "2024-08-29", "2024-08-30", "2024-08-30", "2024-08-30",
-                           "2024-08-30", "2024-08-31", "2024-08-31"
+                           "2024-08-30", "2024-08-31", "2024-08-31",
                            
                            
                                           # September surgery dates
-                           
+                           "2024-09-01", "2024-09-01", "2024-09-01", "2024-09-01",
+                           "2024-09-01", "2024-09-01"
                            )),
   
   
