@@ -16,7 +16,7 @@ find_mode <- function(df, column)
 # Create a data frame that will hold all collected data 
 # Includes: species, type of surgery, age of animal, and date of the surgery
 
-options(max.print = 5000)
+options(max.print = 8000)
 surgery_data <- data.frame(
   
                                       # January's species
@@ -166,13 +166,23 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
-              "Dog", "Dog", "Cat", "Cat", "Dog",
+              "Dog", "Dog", "Cat", "Cat", "Dog", 
               
               
                                       # September's species
               "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Cat", "Dog", "Dog", "Cat", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog",
-              "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog"
+              "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog",
+              "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat",
+              "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Cat", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog"
               ),
   
   
@@ -450,7 +460,25 @@ surgery_data <- data.frame(
                    "Neuter", "Spay", "Spay", "Abscess Repair", "Foxtail Removal",
                    "Nasal Scope", "Laceration Repair", "Mass Removal", "Spay",
                    "Spay", "Spay", "Dental", "Dental", "Dental", "Laceration Repair",
-                   "Mass Removal"
+                   "Mass Removal", "Mass Removal", "Cystotomy", "Pyometra", "Pyometra",
+                   "Amputation", "Spay", "Gastropexy", "Entropion", "Laceration Repair",
+                   "Abscess Repair", "Spay", "Neuter", "Laceration Repair", "Endoscopy",
+                   "Abdominocentesis", "Laceration Repair", "Hematoma", "Laceration Repair",
+                   "Endoscopy", "Hematoma", "Dental", "Dental", "Mass Removal", 
+                   "Amputation", "Dental", "Dental", "Splenectomy", "Mass Removal",
+                   "Mass Removal", "Mass Removal", "Spay", "Enucleation", "Neuter",
+                   "Amputation", "Foxtail Removal", "Laceration Repair", "TPLO",
+                   "Dental", "Dental", "Mass Removal", "Exploratory", "Dental", 
+                   "Dental", "Neuter", "Neuter", "Cystotomy", "Neuter", "Abscess Repair",
+                   "Abscess Repair", "Spay", "Neuter", "Neuter", "Mass Removal",
+                   "Mass Removal", "Dental", "Dental", "Dental", "Mass Removal",
+                   "Spay", "Spay", "Laceration Repair", "Spay", "Spay", "Splenectomy",
+                   "Liver Lobectomy", "Laceration Repair", "Neuter", "Mass Removal",
+                   "Neuter", "Mass Removal", "Mass Removal", "Mass Removal", "Spay",
+                   "Gastropexy", "Mass Removal", "Neuter", "Dental", "Pyometra",
+                   "Abdominocentesis", "Neuter", "Mass Removal", "Dental", "Neuter",
+                   "Cystotomy", "Spay", "Dental", "Laceration Repair", "Enterotomy",
+                   "Anastomosis", "Neuter", "Dental", "Laceration Repair"
                    
                    ),
   
@@ -547,7 +575,11 @@ surgery_data <- data.frame(
           
                                             # September's pet ages
           1, 6, 3, 11, 2, 5, 9, .5, 9, 6, 6, 7, 9, .5, .42, 2, 1, 3, 3, 4, 11, 1, 
-          .83, .5, 12, 6, 10, 15, 11
+          .83, .5, 12, 6, 10, 15, 11, 6, 6, 6, 8, 1, .66, .66, 3, 6, 4, 4, .42, 3,
+          12, 9, 3, 3, 7, 7, 1, 9, 2, 9, 15, 9, 9, 7, 8, 10, 11, .5, .17, .17, 5,
+          6, 2, 9, 12, 9, 7, .66, .66, 7, .5, .5, 4, 4, 3, 2, 1, .5, 1, 11, 5, 10,
+          9, 10, 11, .5, .42, 4, 1, 1, 8, 8, .33, .66, 13, 7, 7, 12, 13, 1, 1, 13,
+          4, 13, 10, 12, 5, 12, 12, .5, 3, 3, 12, 4, 3, 3, .75, 7, 2
           ),
   
   
@@ -887,7 +919,30 @@ surgery_data <- data.frame(
                            "2024-09-08", "2024-09-08", "2024-09-08", "2024-09-08",
                            "2024-09-08", "2024-09-09", "2024-09-09", "2024-09-09",
                            "2024-09-09", "2024-09-09", "2024-09-09", "2024-09-09", 
-                           "2024-09-09"
+                           "2024-09-09", "2024-09-10", "2024-09-10", "2024-09-10",
+                           "2024-09-11", "2024-09-11", "2024-09-11", "2024-09-11",
+                           "2024-09-11", "2024-09-11", "2024-09-11", "2024-09-12",
+                           "2024-09-12", "2024-09-13", "2024-09-13", "2024-09-13",
+                           "2024-09-14", "2024-09-14", "2024-09-14", "2024-09-16",
+                           "2024-09-16", "2024-09-16", "2024-09-16", "2024-09-16",
+                           "2024-09-16", "2024-09-16", "2024-09-16", "2024-09-16",
+                           "2024-09-17", "2024-09-17", "2024-09-17", "2024-09-18",
+                           "2024-09-18", "2024-09-18", "2024-09-18", "2024-09-18",
+                           "2024-09-18", "2024-09-19", "2024-09-19", "2024-09-19",
+                           "2024-09-19", "2024-09-19", "2024-09-19", "2024-09-19",
+                           "2024-09-20", "2024-09-20", "2024-09-20", "2024-09-20",
+                           "2024-09-21", "2024-09-22", "2024-09-23", "2024-09-23",
+                           "2024-09-23", "2024-09-23", "2024-09-23", "2024-09-23",
+                           "2024-09-23", "2024-09-23", "2024-09-23", "2024-09-24",
+                           "2024-09-24", "2024-09-24", "2024-09-24", "2024-09-24",
+                           "2024-09-24", "2024-09-24", "2024-09-24", "2024-09-25",
+                           "2024-09-25", "2024-09-25", "2024-09-25", "2024-09-25", 
+                           "2024-09-25", "2024-09-26", "2024-09-26", "2024-09-26",
+                           "2024-09-26", "2024-09-26", "2024-09-26", "2024-09-26",
+                           "2024-09-27", "2024-09-27", "2024-09-27", "2024-09-27",
+                           "2024-09-27", "2024-09-27", "2024-09-27", "2024-09-28",
+                           "2024-09-29", "2024-09-29", "2024-09-30", "2024-09-30",
+                           "2024-09-30"
                            )),
   
   
