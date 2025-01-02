@@ -185,7 +185,10 @@ surgery_data <- data.frame(
               "Dog",
               
                                     # October's species
-              "Cat", "Cat", "Dog"
+              "Cat", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog",
+              "Dog", "Cat", "Cat", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog"
               ),
   
   
@@ -485,7 +488,14 @@ surgery_data <- data.frame(
                    
                    
                                       # October's surgery types
-                   "Neuter", "Neuter", "Splenectomy"
+                   "Neuter", "Neuter", "Splenectomy", "TPLO", "Neuter", "Endoscopy",
+                   "Soft Tissue", "Abscess Repair", "Spay", "Spay", "Neuter",
+                   "Mass Removal", "Spay", "Spay", "Hematoma", "Neuter", "Neuter",
+                   "Cystotomy", "Dental", "Pyometra", "Cruciate Repair", "Medial Patellar Luxation",
+                   "Enucleation", "Abscess Repair", "Laceration Repair", "Exploratory",
+                   "Abscess Repair", "Laceration Repair", "Spay", "Spay", "Neuter",
+                   "Spay", "Pyometra", "Dental", "Tube Placement", "Fracture Repair",
+                   "Laceration Repair"
                    ),
   
   
@@ -589,7 +599,8 @@ surgery_data <- data.frame(
           
           
                                             # October's pet ages
-          .5, .5, 8
+          .5, .5, 8, 3, .42, 3, 3, 9, .5, .58, 2, 9, .42, .42, 12, 2, .83, 8, 8,
+          7, 10, 10, 2, 2, 7, 1, 7, 2, 3, .66, 2, 1, 9, 9, 9, 9, 2 
           ),
   
   
@@ -956,7 +967,16 @@ surgery_data <- data.frame(
                            
                                     
                                             # October surgery dates
-                           "2024-10-01", "2024-10-01", "2024-10-01"
+                           "2024-10-01", "2024-10-01", "2024-10-01", "2024-10-02",
+                           "2024-10-02", "2024-10-02", "2024-10-02", "2024-10-02",
+                           "2024-10-03", "2024-10-03", "2024-10-03", "2024-10-03",
+                           "2024-10-03", "2024-10-03", "2024-10-03", "2024-10-04",
+                           "2024-10-04", "2024-10-04", "2024-10-04", "2024-10-04",
+                           "2024-10-04", "2024-10-04", "2024-10-05", "2024-10-05",
+                           "2024-10-05", "2024-10-06", "2024-10-06", "2024-10-06",
+                           "2024-10-07", "2024-10-07", "2024-10-07", "2024-10-07",
+                           "2024-10-07", "2024-10-07", "2024-10-07", "2024-10-07",
+                           "2024-10-07"
                            
                            )),
   
