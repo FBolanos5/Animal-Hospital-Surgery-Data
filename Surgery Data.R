@@ -200,6 +200,10 @@ surgery_data <- data.frame(
               "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
               "Cat", "Cat", "Cat", "Dog", "Dog", "Dog"
+              
+              
+                                    # November's species
+              
               ),
   
   
@@ -502,10 +506,10 @@ surgery_data <- data.frame(
                    "Neuter", "Neuter", "Splenectomy", "TPLO", "Neuter", "Endoscopy",
                    "Soft Tissue", "Abscess Repair", "Spay", "Spay", "Neuter",
                    "Mass Removal", "Spay", "Spay", "Hematoma", "Neuter", "Neuter",
-                   "Cystotomy", "Dental", "Pyometra", "Cruciate Repair", "Medial Patellar Luxation",
+                   "Cystotomy", "Dental", "Pyometra", "Cruciate Repair", "Medial Patella Luxation",
                    "Enucleation", "Abscess Repair", "Laceration Repair", "Exploratory",
                    "Abscess Repair", "Laceration Repair", "Spay", "Spay", "Neuter",
-                   "Spay", "Pyometra", "Dental", "Tube Placement", "Fracture Repair",
+                   "Spay", "Pyometra", "Dental", "Gastric Tube Insertion", "Fracture Repair",
                    "Laceration Repair", "Mass Removal", "Mass Removal", "Laceration Repair",
                    "Enterotomy", "Gastrotomy", "Cystotomy", "Soft Tissue", "Neuter",
                    "Cystotomy", "Dental", "Dental", "Implant Removal", "Ablation",
@@ -529,6 +533,11 @@ surgery_data <- data.frame(
                    "Spay", "Mass Removal", "Neuter", "Adenoma", 'Enterotomy', "Dental",
                    "Dental", "Spay", "Cystotomy", "Mass Removal", "Neuter", "Abscess Repair",
                    "Spay", "Cruciate Repair", "Foxtail Removal"
+                   
+                   
+                                        # November's surgery types
+                   
+                   
                    ),
   
   
@@ -631,6 +640,7 @@ surgery_data <- data.frame(
           4, 13, 10, 12, 5, 12, 12, .5, 3, 3, 12, 4, 3, 3, .75, 7, 2,
           
           
+          
                                             # October's pet ages
           .5, .5, 8, 3, .42, 3, 3, 9, .5, .58, 2, 9, .42, .42, 12, 2, .83, 8, 8,
           7, 10, 10, 2, 2, 7, 1, 7, 2, 3, .66, 2, 1, 9, 9, 9, 9, 2, 10, 16, 3, 4, 
@@ -639,6 +649,10 @@ surgery_data <- data.frame(
           7, 3, 4, 1, .5, 1, 1, 8, 5, 6, 2, 12, 8, 7, 6, 5, 3, 6, 5, 6, 12, 1, .58,
           3, 4, 9, .75, 6, 1, 11, 1, 1, 11, 10, 9, 6, 8, 3, 9, 6, 7, 6, 13, 5, 3,
           11, 2, 11, .42, 8, 8, 8, 8, 8, 15, 4, 4, 9, 1, 14, 5, 4, 8
+          
+          
+                                            # November's pet ages
+          
           ),
   
   
@@ -1042,6 +1056,9 @@ surgery_data <- data.frame(
                            "2024-10-29", "2024-10-30", "2024-10-30", "2024-10-30",
                            "2024-10-30", "2024-10-30", "2024-10-31", "2024-10-31",
                            "2024-10-31"
+                           
+                                            # November surgery dates
+                           
                            
                            )),
   
