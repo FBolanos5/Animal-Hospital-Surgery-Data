@@ -199,10 +199,11 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Rabbit", "Rabbit", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
-              "Cat", "Cat", "Cat", "Dog", "Dog", "Dog"
+              "Cat", "Cat", "Cat", "Dog", "Dog", "Dog",
               
               
                                     # November's species
+              "Dog", "Cat", "Cat", "Dog", "Cat", "Cat", "Dog", "Cat", "Cat", "Dog"
               
               ),
   
@@ -532,11 +533,13 @@ surgery_data <- data.frame(
                    "Laceration Repair", "Hematoma", "Laceration Repair", "Fracture Repair",
                    "Spay", "Mass Removal", "Neuter", "Adenoma", 'Enterotomy', "Dental",
                    "Dental", "Spay", "Cystotomy", "Mass Removal", "Neuter", "Abscess Repair",
-                   "Spay", "Cruciate Repair", "Foxtail Removal"
+                   "Spay", "Cruciate Repair", "Foxtail Removal",
                    
                    
                                         # November's surgery types
-                   
+                   "Neuter", "Neuter", "Neuter", "Laceration Repair", "Chest Tap",
+                   "Abscess Repair", "Laceration Repair", "Neuter", "Laceration Repair",
+                   "Hematoma"
                    
                    ),
   
@@ -648,11 +651,11 @@ surgery_data <- data.frame(
           4, 15, 2, 3, 9, 14, 7, .66, .92, 15, 15, .5, 14, 5, 3, 15, 12, 3, 7, 8,
           7, 3, 4, 1, .5, 1, 1, 8, 5, 6, 2, 12, 8, 7, 6, 5, 3, 6, 5, 6, 12, 1, .58,
           3, 4, 9, .75, 6, 1, 11, 1, 1, 11, 10, 9, 6, 8, 3, 9, 6, 7, 6, 13, 5, 3,
-          11, 2, 11, .42, 8, 8, 8, 8, 8, 15, 4, 4, 9, 1, 14, 5, 4, 8
+          11, 2, 11, .42, 8, 8, 8, 8, 8, 15, 4, 4, 9, 1, 14, 5, 4, 8,
           
           
                                             # November's pet ages
-          
+          1, .5, .58, 2, 4, 3, .17, .5, .5, 11
           ),
   
   
@@ -1055,10 +1058,12 @@ surgery_data <- data.frame(
                            "2024-10-29", "2024-10-29", "2024-10-29", "2024-10-29",
                            "2024-10-29", "2024-10-30", "2024-10-30", "2024-10-30",
                            "2024-10-30", "2024-10-30", "2024-10-31", "2024-10-31",
-                           "2024-10-31"
+                           "2024-10-31",
                            
                                             # November surgery dates
-                           
+                           "2024-11-01", "2024-11-01", "2024-11-01", "2024-11-01",
+                           "2024-11-02", "2024-11-03", "2024-11-03", "2024-11-03",
+                           "2024-11-03", "2024-11-03"
                            
                            )),
   
