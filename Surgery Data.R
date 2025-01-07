@@ -209,7 +209,12 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
               "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat",
-              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog"
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Cat",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat",
+              "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Cat", "Dog"
               
               ),
   
@@ -556,7 +561,17 @@ surgery_data <- data.frame(
                    "Cystotomy", "Spay", "Mass Removal", "Spay", "Spay", "Pyometra",
                    "Spay", "Spay", "Hernia Repair", "Laceration Repair", "Amputation",
                    "Dewclaw Removal", "Laceration Repair", "Enterotomy", "Neuter",
-                   "Spay", "Neuter", "Cystotomy", "Laceration Repair"
+                   "Spay", "Neuter", "Cystotomy", "Laceration Repair", "Enucleation",
+                   "Spay", "Mass Removal", "Enucleation",  "Laceration Repair", 
+                   "Neuter", "Neuter", "Amputation", "Spay", "Mass Removal", 
+                   "Mass Removal", "Laceration Repair", "Mass Removal", "Mass Removal",
+                   "Spay", "Mass Removal", "Abscess Repair", "Mass Removal", "Laceration Repair",
+                   "Laceration Repair", "Laceration Repair", "Amputation", "Ablation",
+                   "Spay", "Amputation", "Amputation", "Dental", "Dental", "Dental",
+                   "Dental", "Splenectomy", "Laceration Repair", "Nail Removal",
+                   "Mass Removal", "Dental", "Laceration Repair", "Laceration Repair",
+                   "Dental", "Mass Removal", "Dental", "Abscess Repair", "Laceration Repair",
+                   "Enterotomy", "Spay", "Neuter"
                    
                    ),
   
@@ -675,7 +690,9 @@ surgery_data <- data.frame(
           1, .5, .58, 2, 4, 3, .17, .5, .5, 11, 11, 9, 15, 5, 9, 3, 1, 10, 3, 12,
           12, 12, .58, 2, .5, 1, 7, 11, 10, .66, 10, 10, 1, .25, 9, 2, 5, 3, .25,
           .5, 7, 1, 1, 6, .5, 7, 6, 7, 18, 3, 3, 3, .5, .5, 9, 2, 1, 1, 1, .58, 3,
-          4, 7, 7, 4, 2, 7, 8
+          4, 7, 7, 4, 2, 7, 8, 8, 2, 5, 4, 4, 4, .66, 8, 1, 10, 4, 10, 9, 11, 4,
+          4, 7, 7, 5, 2, 4, 1, 1, 6, 15, 10, 4, 7, 11, 14, 9, 10, 10, 7, 8, 7, 7,
+          3, 3, 3, 11, 5, 5, .5, 1
           
           ),
   
@@ -1098,7 +1115,19 @@ surgery_data <- data.frame(
                            "2024-11-14", "2024-11-14", "2024-11-14", "2024-11-14",
                            "2024-11-14", "2024-11-14", "2024-11-15", "2024-11-15",
                            "2024-11-16", "2024-11-17", "2024-11-17", "2024-11-17",
-                           "2024-11-18", "2024-11-18", "2024-11-18", "2024-11-18"
+                           "2024-11-18", "2024-11-18", "2024-11-18", "2024-11-18",
+                           "2024-11-19", "2024-11-19", "2024-11-20", "2024-11-20",
+                           "2024-11-20", "2024-11-20", "2024-11-21", "2024-11-21",
+                           "2024-11-21", "2024-11-21", "2024-11-21", "2024-11-21", 
+                           "2024-11-21", "2024-11-22", "2024-11-22", "2024-11-22",
+                           "2024-11-22", "2024-11-23", "2024-11-23", "2024-11-23",
+                           "2024-11-24", "2024-11-24", "2024-11-24", "2024-11-25",
+                           "2024-11-25", "2024-11-25", "2024-11-25", "2024-11-25", 
+                           "2024-11-25", "2024-11-25", "2024-11-25", "2024-11-25",
+                           "2024-11-25", "2024-11-26", "2024-11-26", "2024-11-26",
+                           "2024-11-26", "2024-11-27", "2024-11-27", "2024-11-27",
+                           "2024-11-28", "2024-11-28", "2024-11-28", "2024-11-29",
+                           "2024-11-29"
                            
                            )),
   
