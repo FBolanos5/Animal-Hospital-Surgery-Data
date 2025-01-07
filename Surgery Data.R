@@ -203,7 +203,10 @@ surgery_data <- data.frame(
               
               
                                     # November's species
-              "Dog", "Cat", "Cat", "Dog", "Cat", "Cat", "Dog", "Cat", "Cat", "Dog"
+              "Dog", "Cat", "Cat", "Dog", "Cat", "Cat", "Dog", "Cat", "Cat", "Dog",
+              "Dog", "Cat", "Dog", "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Dog", "Dog", "Cat", "Dog", "Dog", "Cat"
               
               ),
   
@@ -539,7 +542,12 @@ surgery_data <- data.frame(
                                         # November's surgery types
                    "Neuter", "Neuter", "Neuter", "Laceration Repair", "Chest Tap",
                    "Abscess Repair", "Laceration Repair", "Neuter", "Laceration Repair",
-                   "Hematoma"
+                   "Hematoma", "Cystotomy", "Cystotomy", "Mass Removal", "Dental",
+                   "Cruciate Repair", "Vulvoplasty", "Dental", "Dental", "Nail Removal",
+                   "Abscess Repair", "Spay", "Mass Removal", "Spay", "Spay", "Neuter",
+                   "Neuter", "Mass Removal", "Mass Removal", "Laceration Repair",
+                   "Neuter", "Mass Removal", "Mass Removal", "Spay", "Amputation",
+                   "Soft Tissue", "Abscess Repair", "Laceration Repair"
                    
                    ),
   
@@ -655,7 +663,8 @@ surgery_data <- data.frame(
           
           
                                             # November's pet ages
-          1, .5, .58, 2, 4, 3, .17, .5, .5, 11
+          1, .5, .58, 2, 4, 3, .17, .5, .5, 11, 11, 9, 15, 5, 9, 3, 1, 10, 3, 12,
+          12, 12, .58, 2, .5, 1, 7, 11, 10, .66, 10, 10, 1, .25, 9, 2, 5
           ),
   
   
@@ -1063,7 +1072,14 @@ surgery_data <- data.frame(
                                             # November surgery dates
                            "2024-11-01", "2024-11-01", "2024-11-01", "2024-11-01",
                            "2024-11-02", "2024-11-03", "2024-11-03", "2024-11-03",
-                           "2024-11-03", "2024-11-03"
+                           "2024-11-03", "2024-11-03", "2024-11-04", "2024-11-04",
+                           "2024-11-04", "2024-11-04", "2024-11-04", "2024-11-04",
+                           "2024-11-04", "2024-11-04", "2024-11-04", "2024-11-04",
+                           "2024-11-05", "2024-11-05", "2024-11-05", "2024-11-05",
+                           "2024-11-06", "2024-11-06", "2024-11-06", "2024-11-06",
+                           "2024-11-06", "2024-11-07", "2024-11-07", "2024-11-07",
+                           "2024-11-08", "2024-11-08", "2024-11-08", "2024-11-08",
+                           "2024-11-08"
                            
                            )),
   
