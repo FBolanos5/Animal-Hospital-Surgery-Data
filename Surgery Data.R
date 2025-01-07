@@ -311,7 +311,7 @@ surgery_data <- data.frame(
                    "Abscess Repair", "Mass Removal", "Laceration Repair", "Spay",
                    "Neuter", "Dental", "Neuter", "Neuter", "Mass Removal", "Pyometra",
                    "Dental", "Dental", "Laceration Repair", "Mass Removal", "Spay",
-                   "Mass Removal", "Laceration Repair", "Neuter", "Soft Tissue", "Spay",
+                   "Mass Removal", "Laceration Repair", "Neuter", "Soft Tissue Repair", "Spay",
                    "Mass Removal", "Cherry Eye", "Mass Removal", "Abscess Repair",
                    "Laceration Repair", "Mass Removal", "Neuter", "Neuter", "Neuter",
                    "Neuter", "Neuter", "Mass Removal", "Spay", "Gastric Tube Insertion",
@@ -376,13 +376,13 @@ surgery_data <- data.frame(
                    "Spay", "Termination", "Dental", "Spay", "Spay", "Laceration Repair",
                    "Dental", "Dental", "Enema", "Enema", "Neuter", "Neuter", "Neuter",
                    "Dental", "Dental", "Spay", "Neuter", "Abscess Repair", "Hernia Repair",
-                   "Spay", "Neuter", "Laceration Repair", "Soft Tissue", "Mass Removal",
+                   "Spay", "Neuter", "Laceration Repair", "Soft Tissue Repair", "Mass Removal",
                    "Dental", "Dental", "Foxtail Removal", "Mass Removal", "Soft Palate Revision",
                    "Dental", "Abscess Repair", "Spay", "Neuter", "Spay", "Spay", 
                    "Nasal Scope", "Abscess Repair", "Abscess Repair", "Laceration Repair",
                    "Laceration Repair", "Neuter", "Abscess Repair", "Laceration Repair",
                    "Laceration Repair", "Spay", "Mass Removal", "Dental", "Hematoma", 
-                   "Laceration Repair", "Laceration Repair", "Soft Tissue", "Neuter",
+                   "Laceration Repair", "Laceration Repair", "Soft Tissue Repair", "Neuter",
                    "Gastrotomy", "Exploratory", "Neuter", "Spay", "Spay", "Laceration Repair",
                    "Gastrotomy", "Spay", "Fracture Repair", "Exploratory", "Enterotomy",
                    
@@ -400,7 +400,7 @@ surgery_data <- data.frame(
                    "Spay", "Spay", "Mass Removal", "Dental", "Dental", "Neuter",
                    "Spay", "Spay", "Foxtail Removal", "Dental", "Spay", "Mass Removal",
                    "Spay", "Mass Removal", "Mass Removal", "Pinnectomy", "Spay", "Spay",
-                   "Soft Tissue", "Neuter", "Neuter", "Spay", "Neuter", "Spay", "Mass Removal",
+                   "Soft Tissue Repair", "Neuter", "Neuter", "Spay", "Neuter", "Spay", "Mass Removal",
                    "Spay", "Mass Removal", "C-Section", "Spay", "Laceration Repair",
                    "Abscess Repair", "Exploratory", "Exploratory", "Exploratory", 
                    "Foxtail Removal", "Mass Removal", "TPLO", "Cystotomy", "Mass Removal",
@@ -435,7 +435,7 @@ surgery_data <- data.frame(
                    "Pyometra", "Laceration Repair", "Laceration Repair", "Abdominocentesis",
                    "Abscess Repair", "Abscess Repair", "Mass Removal", "Dental", "Spay",
                    "Spay", "Dental", "Mass Removal", "Mass Removal", "Neuter", "Pyometra",
-                   "Nasal Scope", "Soft Tissue", "Cystotomy", "Foxtail Removal", "Spay",
+                   "Nasal Scope", "Soft Tissue Repair", "Cystotomy", "Foxtail Removal", "Spay",
                    "Neuter", "Spay", "Mass Removal", "Spay", "Dental", "Laceration Repair",
                    "Mass Removal", "Dental", "Dental", "TPLO", "Amputation", "Spay",
                    "Neuter", "Pyometra", "Mass Removal", "Abscess Repair", "Laceration Repair",
@@ -454,7 +454,7 @@ surgery_data <- data.frame(
                                         # August's surgery types
                    "Neuter", "Spay", "Abscess Repair", "Dental", "Dental", "Neuter",
                    "Mass Removal", "Neuter", "Dental", "Pyometra", "Foxtail Removal",
-                   "Laceration Repair", "Mass Removal", "Spay",  "Neuter", "Soft Tissue",
+                   "Laceration Repair", "Mass Removal", "Spay",  "Neuter", "Soft Tissue Repair",
                    "Dental", "Dental", "Spay", "Mass Removal", "Laceration Repair", "Abscess Repair",
                    "Spay", "Neuter", "Dental", "Dental", "Enterotomy", "Neuter", "Spay", "Pyometra",
                    "Pyometra", "Spay", "Dental", "Mass Removal", "Mass Removal", "Abscess Repair",
@@ -466,7 +466,7 @@ surgery_data <- data.frame(
                    "Dental", "Fracture Repair", "Nasal Scope", "Abscess Repair",
                    "Laceration Repair", "Laceration Repair", "Laceration Repair",
                    "Laceration Repair", "Mass Removal", "Tonometer", "Dental",
-                   "Laceration Repair", "Abscess Repair", "Soft Tissue", "Spay",
+                   "Laceration Repair", "Abscess Repair", "Soft Tissue Repair", "Spay",
                    "Mass Removal", "Dental", "Dental", "Spay", "Amputation", "Mass Removal",
                    "Laceration Repair", "Foxtail Removal", "Abscess Repair", "Mass Removal",
                    "Dental", "Spay", "Dental", "Spay", "Spay", "Neuter", "Neuter",
@@ -516,14 +516,14 @@ surgery_data <- data.frame(
                    
                                       # October's surgery types
                    "Neuter", "Neuter", "Splenectomy", "TPLO", "Neuter", "Endoscopy",
-                   "Soft Tissue", "Abscess Repair", "Spay", "Spay", "Neuter",
+                   "Soft Tissue Repair", "Abscess Repair", "Spay", "Spay", "Neuter",
                    "Mass Removal", "Spay", "Spay", "Hematoma", "Neuter", "Neuter",
                    "Cystotomy", "Dental", "Pyometra", "Cruciate Repair", "Medial Patella Luxation",
                    "Enucleation", "Abscess Repair", "Laceration Repair", "Exploratory",
                    "Abscess Repair", "Laceration Repair", "Spay", "Spay", "Neuter",
                    "Spay", "Pyometra", "Dental", "Gastric Tube Insertion", "Fracture Repair",
                    "Laceration Repair", "Mass Removal", "Mass Removal", "Laceration Repair",
-                   "Enterotomy", "Gastrotomy", "Cystotomy", "Soft Tissue", "Neuter",
+                   "Enterotomy", "Gastrotomy", "Cystotomy", "Soft Tissue Repair", "Neuter",
                    "Cystotomy", "Dental", "Dental", "Implant Removal", "Ablation",
                    "Laceration Repair", "Laceration Repair", "Abscess Repair", "Neuter",
                    "Mass Removal", "Spay", "Spay", "Mass Removal", "Cystotomy",
@@ -536,13 +536,13 @@ surgery_data <- data.frame(
                    "Hernia Repair", "Mass Removal", "Exploratory", "Abscess Repair",
                    "Exploratory", "Pyometra", "Pyometra", "Laceration Repair", 
                    "Laceration Repair", "Mass Removal", "Mass Removal", "Pyometra",
-                   "Dental", "Dental", "Spay", "Spay", "Prolapse", "Dental", 
+                   "Dental", "Dental", "Spay", "Spay", "Prolapse Repair", "Dental", 
                    "Laceration Repair", "Spay", "Dental", "Nail Removal", "Pyometra",
                    "Spay", "Neuter", "Mass Removal", "Endoscopy", "Mass Removal",
                    "Hematoma", "Dental", "Dental", "Mass Removal", "Mass Removal",
                    "Mass Removal", "Dental", "Mass Removal", "Laceration Repair",
                    "Laceration Repair", "Hematoma", "Laceration Repair", "Fracture Repair",
-                   "Spay", "Mass Removal", "Neuter", "Adenoma", 'Enterotomy', "Dental",
+                   "Spay", "Mass Removal", "Neuter", "Adenoma Removal", 'Enterotomy', "Dental",
                    "Dental", "Spay", "Cystotomy", "Mass Removal", "Neuter", "Abscess Repair",
                    "Spay", "Cruciate Repair", "Foxtail Removal",
                    
@@ -555,7 +555,7 @@ surgery_data <- data.frame(
                    "Abscess Repair", "Spay", "Mass Removal", "Spay", "Spay", "Neuter",
                    "Neuter", "Mass Removal", "Mass Removal", "Laceration Repair",
                    "Neuter", "Mass Removal", "Mass Removal", "Spay", "Amputation",
-                   "Soft Tissue", "Abscess Repair", "Laceration Repair", "Abscess Repair",
+                   "Soft Tissue Repair", "Abscess Repair", "Laceration Repair", "Abscess Repair",
                    "Laceration Repair", "Neuter", "Spay", "Laceration Repair", "Neuter",
                    "Dental", "Spay", "Dental", "Endoscopy", "Mass Removal", "Tonometer",
                    "Cystotomy", "Spay", "Mass Removal", "Spay", "Spay", "Pyometra",
@@ -572,6 +572,10 @@ surgery_data <- data.frame(
                    "Mass Removal", "Dental", "Laceration Repair", "Laceration Repair",
                    "Dental", "Mass Removal", "Dental", "Abscess Repair", "Laceration Repair",
                    "Enterotomy", "Spay", "Neuter"
+                   
+                   
+                                          # December's surgery types
+                   
                    
                    ),
   
@@ -693,6 +697,9 @@ surgery_data <- data.frame(
           4, 7, 7, 4, 2, 7, 8, 8, 2, 5, 4, 4, 4, .66, 8, 1, 10, 4, 10, 9, 11, 4,
           4, 7, 7, 5, 2, 4, 1, 1, 6, 15, 10, 4, 7, 11, 14, 9, 10, 10, 7, 8, 7, 7,
           3, 3, 3, 11, 5, 5, .5, 1
+          
+          
+                                            # December's pet ages
           
           ),
   
@@ -1129,9 +1136,11 @@ surgery_data <- data.frame(
                            "2024-11-28", "2024-11-28", "2024-11-28", "2024-11-29",
                            "2024-11-29"
                            
+                           
+                                            # December surgery dates
+                           
                            )),
-  
-  
+
   stringsAsFactors = FALSE
 )
 
