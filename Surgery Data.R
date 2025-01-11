@@ -218,7 +218,10 @@ surgery_data <- data.frame(
               
               
                                     # December's species
-              "Dog", "Dog", "Dog"
+              "Dog", "Dog", "Dog", "Cat", "Cat", "Cat", "Cat", "Dog", "Dog", "Cat",
+              "Dog", "Cat", "Cat", "Dog", "Dog", "Cat", "Dog", "Dog", "Dog", "Dog",
+              "Dog", "Cat", "Cat", "Dog", "Dog", "Cat", "Dog", "Cat", "Dog", "Dog",
+              "Cat", "Cat", "Cat", "Cat", "Cat", "Dog", "Dog", "Dog", "Dog"
               
               ),
   
@@ -579,7 +582,13 @@ surgery_data <- data.frame(
                    
                    
                                           # December's surgery types
-                   "Abscess Repair", "Dental", "Dental"
+                   "Abscess Repair", "Dental", "Dental", "Spay", "Neuter", "Dental",
+                   "Jaw Fracture Repair", "Laceration Repair", "Spay", "Spay",
+                   "Mass Removal", "Neuter", "Neuter", "Dental", "Dental", "Neuter",
+                   "Cruciate Repair", "Medial Patella Luxation", "Dental", "Laceration Repair",
+                   "Spay", "Spay", "Spay", "Mass Removal", "Dental", "Spay", "Mass Removal",
+                   "Gastric Tube Placement", "Dental", "Spay", "Dental", "Abscess Repair",
+                   "Neuter", "Neuter", "Neuter", "Dental", "Spay", "Neuter", "Laceration Repair"
                    
                    ),
   
@@ -704,7 +713,8 @@ surgery_data <- data.frame(
           
           
                                             # December's pet ages
-          13, 15, 14
+          13, 15, 14, .66, .75, 15, 7, 4, .5, .66, 12, .5, .5, 12, 14, .5, 4, 4,
+          3, 11, 3, .58, .66, 5, 5, .5, 9, 3, 9, 1, 13, 13, 2, 1, .5, 6, 5, 4, 13
           ),
   
   
@@ -1142,7 +1152,16 @@ surgery_data <- data.frame(
                            
                            
                                             # December surgery dates
-                           "2024-12-01", "2024-12-01", "2024-12-01"
+                           "2024-12-01", "2024-12-01", "2024-12-01", "2024-12-02",
+                           "2024-12-02", "2024-12-02", "2024-12-02", "2024-12-02",
+                           "2024-12-03", "2024-12-03", "2024-12-03", "2024-12-03",
+                           "2024-12-03", "2024-12-03", "2024-12-03"," 2024-12-03",
+                           "2024-12-03", "2024-12-03", "2024-12-03", "2024-12-03",
+                           "2024-12-04", "2024-12-04", "2024-12-04", "2024-12-04",
+                           "2024-12-04", "2024-12-05", "2024-12-05", "2024-12-05",
+                           "2024-12-05", "2024-12-05", "2024-12-05", "2024-12-05",
+                           "2024-12-06", "2024-12-06", "2024-12-06", "2024-12-06",
+                           "2024-12-06", "2024-12-06", "2024-12-06"
                            )),
 
   stringsAsFactors = FALSE
