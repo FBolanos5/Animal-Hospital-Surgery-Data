@@ -214,7 +214,11 @@ surgery_data <- data.frame(
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Cat",
               "Cat", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
               "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog", "Dog",
-              "Dog", "Cat", "Dog"
+              "Dog", "Cat", "Dog",
+              
+              
+                                    # December's species
+              "Dog", "Dog", "Dog"
               
               ),
   
@@ -571,11 +575,11 @@ surgery_data <- data.frame(
                    "Dental", "Splenectomy", "Laceration Repair", "Nail Removal",
                    "Mass Removal", "Dental", "Laceration Repair", "Laceration Repair",
                    "Dental", "Mass Removal", "Dental", "Abscess Repair", "Laceration Repair",
-                   "Enterotomy", "Spay", "Neuter"
+                   "Enterotomy", "Spay", "Neuter",
                    
                    
                                           # December's surgery types
-                   
+                   "Abscess Repair", "Dental", "Dental"
                    
                    ),
   
@@ -696,11 +700,11 @@ surgery_data <- data.frame(
           .5, 7, 1, 1, 6, .5, 7, 6, 7, 18, 3, 3, 3, .5, .5, 9, 2, 1, 1, 1, .58, 3,
           4, 7, 7, 4, 2, 7, 8, 8, 2, 5, 4, 4, 4, .66, 8, 1, 10, 4, 10, 9, 11, 4,
           4, 7, 7, 5, 2, 4, 1, 1, 6, 15, 10, 4, 7, 11, 14, 9, 10, 10, 7, 8, 7, 7,
-          3, 3, 3, 11, 5, 5, .5, 1
+          3, 3, 3, 11, 5, 5, .5, 1,
           
           
                                             # December's pet ages
-          
+          13, 15, 14
           ),
   
   
@@ -1134,11 +1138,11 @@ surgery_data <- data.frame(
                            "2024-11-25", "2024-11-26", "2024-11-26", "2024-11-26",
                            "2024-11-26", "2024-11-27", "2024-11-27", "2024-11-27",
                            "2024-11-28", "2024-11-28", "2024-11-28", "2024-11-29",
-                           "2024-11-29"
+                           "2024-11-29",
                            
                            
                                             # December surgery dates
-                           
+                           "2024-12-01", "2024-12-01", "2024-12-01"
                            )),
 
   stringsAsFactors = FALSE
