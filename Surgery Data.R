@@ -5,6 +5,7 @@
 # Libraries used:
 
 library(dplyr)
+library(lubridate)
 
 # Functions:
 
@@ -16,7 +17,7 @@ find_mode <- function(df, column)
 # Create a data frame that will hold all collected data 
 # Includes: species, type of surgery, age of animal, and date of the surgery
 
-options(max.print = 8000)
+options(max.print = 9999999)
 surgery_data <- data.frame(
   
                                       # January's species
@@ -1235,6 +1236,21 @@ surgery_data <- data.frame(
 print(surgery_data)
 
 # Some experimenting with getting data. Possible uses later.
+
+# Ideas: 
+# Most surgeries, extract month from the dates so I can display surgery amount for each month
+
+# is.timepoint(surgery_data$surgery_date) #checks if date is able to be parsed
+surgery_data_modified  <- surgery_data %>% mutate(surgery_month = month(surgery_date, label = TRUE, abbr = FALSE))
+surgery_data_modified %>% count(surgery_month)
+# Oldest age Surgery for each species, Youngest age Surgery for each species
+# Most common age?
+# Pie Chart for each species? (Combine pocket pets?)
+# Maybe graph for most popular surgeries?
+# Date we had the most surgeries
+# Date we had the least surgeries
+# Box chart?
+
 
 #surgery_data %>% count(species)
 #surgery_data %>% count(surgery_type)
