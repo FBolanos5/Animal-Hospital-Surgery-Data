@@ -6,6 +6,7 @@
 
 library(dplyr)
 library(lubridate)
+library(ggplot2)
 
 # Functions:
 
@@ -1238,11 +1239,17 @@ print(surgery_data)
 # Some experimenting with getting data. Possible uses later.
 
 # Ideas: 
-# Most surgeries, extract month from the dates so I can display surgery amount for each month
 
+# Most surgeries, extract month from the dates so I can display surgery amount for each month
 # is.timepoint(surgery_data$surgery_date) #checks if date is able to be parsed
+
 surgery_data_modified  <- surgery_data %>% mutate(surgery_month = month(surgery_date, label = TRUE, abbr = FALSE))
-surgery_data_modified %>% count(surgery_month)
+#month_count <- surgery_data_modified %>% count(surgery_month)
+ggplot(dat = surgery_data_modified, aes(x = surgery_month, fill = surgery_month))+ 
+ geom_bar(stat = "count") + 
+  stat_count(geom = "text", colour = "white", size = 3.5, aes(label = ..count..), 
+             position = position_stack(vjust = 0.5))
+
 # Oldest age Surgery for each species, Youngest age Surgery for each species
 # Most common age?
 # Pie Chart for each species? (Combine pocket pets?)
