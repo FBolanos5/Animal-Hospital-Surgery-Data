@@ -1259,12 +1259,20 @@ var.labels = c(species = "Animal Species", surgery_type = "Type of surgery", age
 label(graph_mxagsp) = as.list(var.labels[match(names(graph_mxagsp), names(var.labels))])
 label(graph_mxagsp)
 View(graph_mxagsp)
+
 graph_minagsp <- age_species %>% group_by(species) %>% filter(age == min(age))
+label(graph_minagsp) = as.list(var.labels[match(names(graph_minagsp), names(var.labels))])
+label(graph_minagsp)
 View(graph_minagsp)
 
-#surgery_data %>% group_by(species) %>% summarise(max_age = max(age)) 
 # Most common age?
+
+mode_age <- find_mode(surgery_data, "age")
+View(mode_age)
+
 # Pie Chart for each species? (Combine pocket pets?)
+
+
 # Maybe graph for most popular surgeries?
 # Date we had the most surgeries
 # Date we had the least surgeries
@@ -1275,7 +1283,6 @@ View(graph_minagsp)
 #surgery_data %>% count(surgery_type)
 #surgery_data %>% count(surgery_date)
 
-#surgery_data %>% group_by(species) %>% filter(age == min(age, na.rm = TRUE))
 #mean(surgery_data$age)
 #mode <- find_mode(surgery_data, "surgery_date")
 #print(mode)
