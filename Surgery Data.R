@@ -7,6 +7,7 @@
 library(dplyr)
 library(lubridate)
 library(ggplot2)
+library(Hmisc)
 
 # Functions:
 
@@ -1251,9 +1252,15 @@ ggplot(dat = surgery_data_modified, aes(x = surgery_month, fill = surgery_month)
              position = position_stack(vjust = 0.5))
 
 # Oldest age Surgery for each species, Youngest age Surgery for each species
-max_age_species <- select(surgery_data, -surgery_date)
-graph_mxagsp <- max_age_species %>% group_by(species) %>% filter(age == max(age))
+
+age_species <- select(surgery_data, -surgery_date)
+graph_mxagsp <- age_species %>% group_by(species) %>% filter(age == max(age))
+var.labels = c(species = "Animal Species", surgery_type = "Type of surgery", age = "Age in Years")
+label(graph_mxagsp) = as.list(var.labels[match(names(graph_mxagsp), names(var.labels))])
+label(graph_mxagsp)
 View(graph_mxagsp)
+graph_minagsp <- age_species %>% group_by(species) %>% filter(age == min(age))
+View(graph_minagsp)
 
 #surgery_data %>% group_by(species) %>% summarise(max_age = max(age)) 
 # Most common age?
