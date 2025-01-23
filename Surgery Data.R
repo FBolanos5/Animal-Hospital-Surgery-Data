@@ -1247,10 +1247,15 @@ surgery_data_modified  <- surgery_data %>% mutate(surgery_month = month(surgery_
 #month_count <- surgery_data_modified %>% count(surgery_month)
 ggplot(dat = surgery_data_modified, aes(x = surgery_month, fill = surgery_month))+ 
  geom_bar(stat = "count") + 
-  stat_count(geom = "text", colour = "white", size = 3.5, aes(label = ..count..), 
+  stat_count(geom = "text", colour = "white", size = 4, fontface = "bold", aes(label = ..count..), 
              position = position_stack(vjust = 0.5))
 
 # Oldest age Surgery for each species, Youngest age Surgery for each species
+max_age_species <- select(surgery_data, -surgery_date)
+graph_mxagsp <- max_age_species %>% group_by(species) %>% filter(age == max(age))
+View(graph_mxagsp)
+
+#surgery_data %>% group_by(species) %>% summarise(max_age = max(age)) 
 # Most common age?
 # Pie Chart for each species? (Combine pocket pets?)
 # Maybe graph for most popular surgeries?
@@ -1262,7 +1267,7 @@ ggplot(dat = surgery_data_modified, aes(x = surgery_month, fill = surgery_month)
 #surgery_data %>% count(species)
 #surgery_data %>% count(surgery_type)
 #surgery_data %>% count(surgery_date)
-#surgery_data %>% group_by(species) %>% filter(age == max(age, na.rm = TRUE))
+
 #surgery_data %>% group_by(species) %>% filter(age == min(age, na.rm = TRUE))
 #mean(surgery_data$age)
 #mode <- find_mode(surgery_data, "surgery_date")
