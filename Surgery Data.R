@@ -1243,14 +1243,17 @@ print(surgery_data)
 
 # Most surgeries, extract month from the dates so I can display surgery amount for each month
 # is.timepoint(surgery_data$surgery_date) #checks if date is able to be parsed
-
+# Modify the data to create the month name as a new column
 surgery_data_modified  <- surgery_data %>% mutate(surgery_month = month(surgery_date, label = TRUE, abbr = FALSE))
 #month_count <- surgery_data_modified %>% count(surgery_month)
-ggplot(dat = surgery_data_modified, aes(x = surgery_month, fill = surgery_month))+ 
+View(surgery_data_modified)
+# Bar graph with labels containing the count
+surgery_month_graph <- ggplot(dat = surgery_data_modified, aes(y = surgery_month, fill = surgery_month))+ 
  geom_bar(stat = "count") + 
-  stat_count(geom = "text", colour = "white", size = 4, fontface = "bold", aes(label = ..count..), 
+  stat_count(geom = "text", colour = "white", size = 4, fontface = "bold", aes(label = after_stat(count)), 
              position = position_stack(vjust = 0.5))
-
+ test_graph <- surgery_month_graph + labs(x = "Month", y = "Number of Surgeries", title = "Amount of surgeries per month", fill = "Month")
+ test_graph
 # Oldest age Surgery for each species, Youngest age Surgery for each species
 
 age_species <- select(surgery_data, -surgery_date)
@@ -1268,7 +1271,13 @@ View(graph_minagsp)
 # Most common age?
 
 mode_age <- find_mode(surgery_data, "age")
-View(mode_age)
+mode_age_df <- as.data.frame(mode_age)
+mode_age_df <- mode_age_df %>% rename(
+  Most_Common_Age = mode_age
+)
+var_labels_mode = c(Most_Common_Age = "Most Common Surgery Age(Yrs)")
+label(mode_age_df) = as.list(var_labels_mode[match(names(mode_age_df), names(var_labels_mode))])
+View(mode_age_df)
 
 # Pie Chart for each species? (Combine pocket pets?)
 
