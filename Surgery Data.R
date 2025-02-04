@@ -1248,12 +1248,15 @@ surgery_data_modified  <- surgery_data %>% mutate(surgery_month = month(surgery_
 #month_count <- surgery_data_modified %>% count(surgery_month)
 View(surgery_data_modified)
 # Bar graph with labels containing the count
-surgery_month_graph <- ggplot(dat = surgery_data_modified, aes(y = surgery_month, fill = surgery_month))+ 
+surgery_month_graph <- ggplot(dat = surgery_data_modified, aes(x = surgery_month, fill = surgery_month))+ 
  geom_bar(stat = "count") + 
   stat_count(geom = "text", colour = "white", size = 4, fontface = "bold", aes(label = after_stat(count)), 
              position = position_stack(vjust = 0.5))
- test_graph <- surgery_month_graph + labs(x = "Month", y = "Number of Surgeries", title = "Amount of surgeries per month", fill = "Month")
- test_graph
+# Changing the labels for x-y axis and the legend title
+ month_bar_graph <- surgery_month_graph + labs(x = "Month", y = "Number of Surgeries", title = "Amount of surgeries per month", fill = "Month")
+ month_bar_graph
+ 
+ 
 # Oldest age Surgery for each species, Youngest age Surgery for each species
 
 age_species <- select(surgery_data, -surgery_date)
@@ -1280,6 +1283,25 @@ label(mode_age_df) = as.list(var_labels_mode[match(names(mode_age_df), names(var
 View(mode_age_df)
 
 # Pie Chart for each species? (Combine pocket pets?)
+# Created the own df for species table
+species_count <- surgery_data %>% count(species)
+View(species_count)
+#attemtped pie chrt
+#pie_percent <- round(100 * species_count$n / sum(species_count$n), 1)
+#pie(species_count$n, labels = pie_percent,
+ #   main = "Species", col = rainbow(length(species_count$n)))
+#legend("topright", c(species_count$species), cex = 0.5, fill = rainbow(length(species_count$n)))
+
+# Bar graph for the number of each type of species we did surgery on.
+species_graph  <- ggplot(species_count, aes(x = species, y = n, fill = species)) +
+  geom_bar(width = 0.8, stat = "identity") +
+  geom_text(label = with(species_count,paste(n,paste0('(',scales::percent(n/sum(n),accuracy = .01),')'))), vjust = -.2) +
+  ylim(0, 1500)
+species_graph <- species_graph + labs(x = "Type of Species", y = "Amount of Species", title = "Number of Species seen in the Hospital", 
+                                      fill = "Species", caption = sprintf("Total Amount: %s", sum(species_count$n)))
+species_graph
+  
+
 
 
 # Maybe graph for most popular surgeries?
@@ -1288,7 +1310,7 @@ View(mode_age_df)
 # Box chart?
 
 
-#surgery_data %>% count(species)
+
 #surgery_data %>% count(surgery_type)
 #surgery_data %>% count(surgery_date)
 
