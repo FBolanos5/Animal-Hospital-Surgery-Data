@@ -1271,6 +1271,7 @@ label(graph_minagsp) = as.list(var.labels[match(names(graph_minagsp), names(var.
 label(graph_minagsp)
 View(graph_minagsp)
 
+
 # Most common age?
 
 mode_age <- find_mode(surgery_data, "age")
@@ -1286,7 +1287,7 @@ View(mode_age_df)
 # Created the own df for species table
 species_count <- surgery_data %>% count(species)
 View(species_count)
-#attemtped pie chrt
+#attempted pie chart
 #pie_percent <- round(100 * species_count$n / sum(species_count$n), 1)
 #pie(species_count$n, labels = pie_percent,
  #   main = "Species", col = rainbow(length(species_count$n)))
@@ -1297,21 +1298,43 @@ species_graph  <- ggplot(species_count, aes(x = species, y = n, fill = species))
   geom_bar(width = 0.8, stat = "identity") +
   geom_text(label = with(species_count,paste(n,paste0('(',scales::percent(n/sum(n),accuracy = .01),')'))), vjust = -.2) +
   ylim(0, 1500)
-species_graph <- species_graph + labs(x = "Type of Species", y = "Amount of Species", title = "Number of Species seen in the Hospital", 
+species_graph <- species_graph + labs(x = "Type of Species", y = "Amount of Species", title = "Amount of Species That had Surgery", 
                                       fill = "Species", caption = sprintf("Total Amount: %s", sum(species_count$n)))
 species_graph
   
 
 
-
+# Graph of all surgeries
+# Make df of surgery type + count
+surgery_type_df <- surgery_data %>% count(surgery_type)
+# Create a lollipop graph w/ labels for this df
+sur_type_graph <- ggplot(surgery_type_df, aes(x = surgery_type, y = n)) +
+  geom_point(color = "orange", size = 3) +
+  geom_segment(aes(x = surgery_type, xend = surgery_type, y = 0, yend = n), color ="gray") +
+  geom_text(aes(label = n), hjust = -1) + #The count labels at the end
+  #scale_y_discrete(labels = label_wrap_gen(10))
+  # Flip the graph axis and change the background theme
+  coord_flip() +
+  theme_light() +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.border = element_blank(),
+    axis.ticks.x = element_blank()
+  ) +
+  theme(axis.text.y = element_text(size = 8.2))+
+  labs(x = "Type of Surgeries", y = "Amount of Surgeries Done", title = "List of Surgeries") +
+  theme(plot.title = element_text(hjust = 0.5))
+sur_type_graph
 # Maybe graph for most popular surgeries?
+
+
 # Date we had the most surgeries
 # Date we had the least surgeries
 # Box chart?
 
 
 
-#surgery_data %>% count(surgery_type)
+
 #surgery_data %>% count(surgery_date)
 
 #mean(surgery_data$age)
