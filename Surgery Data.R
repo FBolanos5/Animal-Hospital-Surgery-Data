@@ -1345,9 +1345,11 @@ treemap(top_10_modified,
         type = "categorical",
         palette = "Accent",
         title = "Ten Most Frequent Surgeries",
+        title.legend = "Classification of Surgery",
         border.col = "black",
         fontsize.title = 14,
-        fontsize.labels = 12)
+        fontsize.labels = 12,
+        fontsize.legend = 8.5)
 
 
 # Date we had the most surgeries
