@@ -8,6 +8,7 @@ library(dplyr)
 library(lubridate)
 library(ggplot2)
 library(Hmisc)
+library(treemap)
 
 # Functions:
 
@@ -1325,7 +1326,28 @@ sur_type_graph <- ggplot(surgery_type_df, aes(x = surgery_type, y = n)) +
   labs(x = "Type of Surgeries", y = "Amount of Surgeries Done", title = "List of Surgeries") +
   theme(plot.title = element_text(hjust = 0.5))
 sur_type_graph
+
 # Maybe graph for most popular surgeries?
+# Cut the graph to get the top 10 surgeries
+top_10_sur_type <- surgery_type_df %>% arrange(desc(n)) %>%
+  slice(1:10)
+top_10_modified <- top_10_sur_type
+top_10_modified$classification <- c("Elective", "Elective", "Urgent", "Elective", 
+"Urgent", "Urgent", "Emergency", "Emergency", "Emergency", "Urgent")
+top_10_modified$label <- paste(top_10_modified$surgery_type, top_10_modified$n, sep = "\n")
+top_10_modified
+# Create a Tree Map of the top 10 surgeries
+#treemap(top_10_sur_type, index = "surgery_type", vSize = "n", type = "index")
+treemap(top_10_modified,
+        index = c("label"),
+        vSize = "n",
+        vColor = "classification",
+        type = "categorical",
+        palette = "Accent",
+        title = "Ten Most Frequent Surgeries",
+        border.col = "black",
+        fontsize.title = 14,
+        fontsize.labels = 12)
 
 
 # Date we had the most surgeries
