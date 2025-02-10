@@ -7,8 +7,8 @@
 library(dplyr)
 library(lubridate)
 library(ggplot2)
-library(Hmisc)
 library(treemap)
+library(Hmisc)
 
 # Functions:
 
@@ -1245,30 +1245,52 @@ print(surgery_data)
 # Most surgeries, extract month from the dates so I can display surgery amount for each month
 # is.timepoint(surgery_data$surgery_date) #checks if date is able to be parsed
 # Modify the data to create the month name as a new column
-surgery_data_modified  <- surgery_data %>% mutate(surgery_month = month(surgery_date, label = TRUE, abbr = FALSE))
+surgery_data_modified  <- surgery_data %>% 
+  mutate(surgery_month = month(surgery_date,
+                               label = TRUE, 
+                               abbr = FALSE))
 #month_count <- surgery_data_modified %>% count(surgery_month)
 View(surgery_data_modified)
 # Bar graph with labels containing the count
-surgery_month_graph <- ggplot(dat = surgery_data_modified, aes(x = surgery_month, fill = surgery_month))+ 
+surgery_month_graph <- ggplot(dat = surgery_data_modified, 
+                              aes(x = surgery_month,
+                                  fill = surgery_month))+ 
  geom_bar(stat = "count") + 
-  stat_count(geom = "text", colour = "white", size = 4, fontface = "bold", aes(label = after_stat(count)), 
+  stat_count(geom = "text",
+             colour = "white", 
+             size = 4, 
+             fontface = "bold", 
+             aes(label = after_stat(count)), 
              position = position_stack(vjust = 0.5))
 # Changing the labels for x-y axis and the legend title
- month_bar_graph <- surgery_month_graph + labs(x = "Month", y = "Number of Surgeries", title = "Amount of surgeries per month", fill = "Month")
+ month_bar_graph <- surgery_month_graph + 
+   labs(x = "Month", 
+        y = "Number of Surgeries",
+        title = "Amount of surgeries per month", 
+        fill = "Month")
  month_bar_graph
  
  
 # Oldest age Surgery for each species, Youngest age Surgery for each species
 
-age_species <- select(surgery_data, -surgery_date)
-graph_mxagsp <- age_species %>% group_by(species) %>% filter(age == max(age))
+age_species <- select(surgery_data, 
+                      -surgery_date)
+graph_mxagsp <- age_species %>%
+  group_by(species) %>% 
+  filter(age == max(age))
 var.labels = c(species = "Animal Species", surgery_type = "Type of surgery", age = "Age in Years")
-label(graph_mxagsp) = as.list(var.labels[match(names(graph_mxagsp), names(var.labels))])
+label(graph_mxagsp) = as.list(var.labels
+                              [match(names(graph_mxagsp), 
+                                     names(var.labels))])
 label(graph_mxagsp)
 View(graph_mxagsp)
 
-graph_minagsp <- age_species %>% group_by(species) %>% filter(age == min(age))
-label(graph_minagsp) = as.list(var.labels[match(names(graph_minagsp), names(var.labels))])
+graph_minagsp <-  age_species %>% 
+  group_by(species) %>% 
+  filter(age == min(age))
+label(graph_minagsp) = as.list(var.labels
+                               [match(names(graph_minagsp), 
+                                      names(var.labels))])
 label(graph_minagsp)
 View(graph_minagsp)
 
@@ -1276,12 +1298,14 @@ View(graph_minagsp)
 # Most common age?
 
 mode_age <- find_mode(surgery_data, "age")
+View(mode_age)
 mode_age_df <- as.data.frame(mode_age)
 mode_age_df <- mode_age_df %>% rename(
   Most_Common_Age = mode_age
 )
 var_labels_mode = c(Most_Common_Age = "Most Common Surgery Age(Yrs)")
-label(mode_age_df) = as.list(var_labels_mode[match(names(mode_age_df), names(var_labels_mode))])
+label(mode_age_df) = as.list(var_labels_mode[match(names(mode_age_df),
+                                                   names(var_labels_mode))])
 View(mode_age_df)
 
 # Pie Chart for each species? (Combine pocket pets?)
@@ -1295,9 +1319,18 @@ View(species_count)
 #legend("topright", c(species_count$species), cex = 0.5, fill = rainbow(length(species_count$n)))
 
 # Bar graph for the number of each type of species we did surgery on.
-species_graph  <- ggplot(species_count, aes(x = species, y = n, fill = species)) +
-  geom_bar(width = 0.8, stat = "identity") +
-  geom_text(label = with(species_count,paste(n,paste0('(',scales::percent(n/sum(n),accuracy = .01),')'))), vjust = -.2) +
+species_graph  <- ggplot(species_count, 
+                         aes(x = species, 
+                             y = n, 
+                             fill = species)) +
+  geom_bar(width = 0.8,
+           stat = "identity") +
+  geom_text(label = with(species_count,
+                         paste(n,
+                               paste0('(',
+                                      scales::percent(n/sum(n),
+                                                      accuracy = .01),')'))), 
+            vjust = -.2) +
   ylim(0, 1500)
 species_graph <- species_graph + labs(x = "Type of Species", y = "Amount of Species", title = "Amount of Species That had Surgery", 
                                       fill = "Species", caption = sprintf("Total Amount: %s", sum(species_count$n)))
@@ -1309,9 +1342,16 @@ species_graph
 # Make df of surgery type + count
 surgery_type_df <- surgery_data %>% count(surgery_type)
 # Create a lollipop graph w/ labels for this df
-sur_type_graph <- ggplot(surgery_type_df, aes(x = surgery_type, y = n)) +
-  geom_point(color = "orange", size = 3) +
-  geom_segment(aes(x = surgery_type, xend = surgery_type, y = 0, yend = n), color ="gray") +
+sur_type_graph <- ggplot(surgery_type_df,
+                         aes(x = surgery_type, 
+                              y = n)) +
+  geom_point(color = "orange", 
+             size = 3) +
+  geom_segment(aes(x = surgery_type,
+                   xend = surgery_type,
+                   y = 0, 
+                   yend = n),
+               color ="gray") +
   geom_text(aes(label = n), hjust = -1) + #The count labels at the end
   #scale_y_discrete(labels = label_wrap_gen(10))
   # Flip the graph axis and change the background theme
@@ -1322,9 +1362,11 @@ sur_type_graph <- ggplot(surgery_type_df, aes(x = surgery_type, y = n)) +
     panel.border = element_blank(),
     axis.ticks.x = element_blank()
   ) +
-  theme(axis.text.y = element_text(size = 8.2))+
+  theme(
+    axis.text.y = element_text(size = 8.2))+
   labs(x = "Type of Surgeries", y = "Amount of Surgeries Done", title = "List of Surgeries") +
-  theme(plot.title = element_text(hjust = 0.5))
+  theme(
+    plot.title = element_text(hjust = 0.5))
 sur_type_graph
 
 # Maybe graph for most popular surgeries?
@@ -1353,6 +1395,26 @@ treemap(top_10_modified,
 
 
 # Date we had the most surgeries
+# Creating DF with dates + count for each date that may have repeated
+SD_mode_df <-surgery_data %>% 
+  count(surgery_date)
+# Get the highest number of count and display both date + count
+SD_mode_df<- SD_mode_df %>% 
+  slice_max(n, n =1)
+View(SD_mode_df)
+
+SD_mode_df <- SD_mode_df%>% rename(
+  Surgery_Date = surgery_date
+)
+SD_mode_df <- SD_mode_df%>% rename(
+  Amount_Of_Surgeries = n
+)
+var_SDlabels_mode = c(Surgery_Date = "Most Surgeries were on these dates",
+                      Amount_Of_Surgeries = "# of Surgeries")
+label(SD_mode_df) = as.list(var_SDlabels_mode[match(names(SD_mode_df),
+                                                   names(var_SDlabels_mode))])
+View(SD_mode_df)
+
 # Date we had the least surgeries
 # Box chart?
 
@@ -1362,5 +1424,5 @@ treemap(top_10_modified,
 #surgery_data %>% count(surgery_date)
 
 #mean(surgery_data$age)
-#mode <- find_mode(surgery_data, "surgery_date")
+
 #print(mode)
