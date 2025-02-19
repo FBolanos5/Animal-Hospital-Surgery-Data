@@ -1429,7 +1429,7 @@ ggplot(date_count_df, aes(x = surgery_month,
                           fill = surgery_month)) + 
   geom_boxplot(alpha = 0.5) + 
   geom_jitter(color = "black",
-              size = 1, alpha = 1) +
+              size = 0.7, alpha = 0.9) +
   xlab("Month")+
   ylab("Amount of surgeries") +
   ylim(0,15)+
@@ -1440,7 +1440,7 @@ ggplot(date_count_df, aes(x = surgery_month,
                color = "red",
                fill = "red") +
   theme(legend.position = "none") +
-  ggtitle("Boxplot of # Surgeries per Month")
+  ggtitle("Boxplot of # Surgeries Each day of the Month")
   
 
 #mean(surgery_data$age)
