@@ -1415,13 +1415,31 @@ label(SD_mode_df) = as.list(var_SDlabels_mode[match(names(SD_mode_df),
                                                    names(var_SDlabels_mode))])
 View(SD_mode_df)
 
-# Date we had the least surgeries
 # Box chart?
 
-
-
-
-#surgery_data %>% count(surgery_date)
+date_count_df <- surgery_data_modified %>% count(surgery_date)
+date_count_df<- date_count_df %>% 
+  mutate(surgery_month = month(surgery_date,
+                               label = TRUE, 
+                               abbr = FALSE))
+date_count_df
+boxplot(date_count_df$n)
+ggplot(date_count_df, aes(x = surgery_month, 
+                          y = n, 
+                          fill = surgery_month)) + 
+  geom_boxplot(alpha = 0.5) + 
+  xlab("Month")+
+  ylab("Amount of surgeries") +
+  ylim(0,15)+
+  stat_summary(fun = mean,
+               geom = "point",
+               shape= 10,
+               size = 4,
+               color = "red",
+               fill = "red") +
+  theme(legend.position = "none") +
+  ggtitle("Boxplot of # Surgeries per Month")
+  
 
 #mean(surgery_data$age)
 
