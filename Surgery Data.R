@@ -1443,6 +1443,8 @@ ggplot(date_count_df, aes(x = surgery_month,
   ggtitle("Boxplot of # Surgeries Each day of the Month")
   
 
+# Bar graph of amount of surgeries each quartile?
+
 #mean(surgery_data$age)
 
 #print(mode)
