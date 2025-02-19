@@ -1428,6 +1428,8 @@ ggplot(date_count_df, aes(x = surgery_month,
                           y = n, 
                           fill = surgery_month)) + 
   geom_boxplot(alpha = 0.5) + 
+  geom_jitter(color = "black",
+              size = 1, alpha = 1) +
   xlab("Month")+
   ylab("Amount of surgeries") +
   ylim(0,15)+
