@@ -9,6 +9,7 @@ library(lubridate)
 library(ggplot2)
 library(treemap)
 library(Hmisc)
+library(RColorBrewer)
 
 # Functions:
 
@@ -1443,7 +1444,38 @@ ggplot(date_count_df, aes(x = surgery_month,
   ggtitle("Boxplot of # Surgeries Each day of the Month")
   
 
-# Bar graph of amount of surgeries each quartile?
+# Bar graph of amount of surgeries each quarter
+
+month_count <- surgery_data_modified %>% count(surgery_month) #create new df 
+# Combine months into quarters (Q1 = Jan,Feb,Mar Q2 = Apr,May,Jun etc.)
+quarter_count <- month_count %>%
+  mutate(quarter_period = case_when(
+    surgery_month %in% c("January", "February", "March") ~ "Quarter 1",
+    surgery_month %in% c("April", "May", "June") ~ "Quarter 2",
+    surgery_month %in% c("July", "August", "September") ~ "Quarter 3",
+    surgery_month %in% c("October", "November", "December") ~ "Quarter 4",
+  )) %>%
+  group_by(quarter_period) %>%
+  dplyr::summarize(count = sum(n)) %>%
+  ungroup()
+# make it a DF
+quarter_count <- as.data.frame(quarter_count)
+# Create the graph
+quarter_graph <- ggplot(quarter_count, 
+                        aes(x = quarter_period,
+                            y = count,
+                            fill = as.factor(quarter_period))) +  #Allows the use of fill palettes
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("#c088e3","#9625db","#d214e3","#e314b3")) +
+    geom_text(aes(label = count),
+              vjust = 1.5,
+              color = "white",
+              size = 4) +
+  ylim(0,450) +
+  labs(title = "Surgeries in the Fiscal Quarter", 
+       x = "Fiscal Quarter",
+       y = "# of Surgeries",
+       fill = "Fiscal Quarter")
 
 #mean(surgery_data$age)
 
