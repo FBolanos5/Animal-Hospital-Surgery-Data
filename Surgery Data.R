@@ -1477,6 +1477,8 @@ quarter_graph <- ggplot(quarter_count,
        y = "# of Surgeries",
        fill = "Fiscal Quarter")
 
-#mean(surgery_data$age)
+
+
+# TO DO (MARKDOWN R? POWERPOINT? JUST A DOCUMENT OF THE GRAPHS?)
 
 #print(mode)
